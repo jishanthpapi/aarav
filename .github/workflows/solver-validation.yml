@@ -1,0 +1,41 @@
+name: Solver validation
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20', cache: 'npm' }
+      - run: npm ci
+
+      # Headless WebGPU via Dawn. Software-rasterised on CI runners, so
+      # PERFORMANCE BUDGETS ARE NOT MEANINGFUL HERE — they run in the
+      # separate self-hosted GPU job below.
+      - name: Correctness suites
+        run: npx tsx scripts/run-validation.ts --suites=conservation,symmetry,fuzz,trends,scaling
+        env: { AARAV_HEADLESS_GPU: dawn }
+
+      - name: Grid convergence
+        if: github.event_name == 'pull_request'
+        run: npx tsx scripts/run-validation.ts --suites=gci
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validation-report
+          path: validation-report.json
+
+  performance:
+    runs-on: [self-hosted, gpu]
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20', cache: 'npm' }
+      - run: npm ci
+      - name: Performance budgets
+        run: npx tsx scripts/run-validation.ts --suites=perf,golden

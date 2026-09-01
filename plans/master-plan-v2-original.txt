@@ -1,0 +1,40 @@
+# Aarav Aerodynamics App — Master Plan (v2.0)
+
+## 1. Project Vision
+Aarav is a high-fidelity, browser-based aerodynamics teaching tool. It uses a real-time WebGPU Lattice Boltzmann Method (LBM) solver to simulate airflow over 3D models. The app features an integrated AI tutor ("Aarav") that can manipulate the 3D scene and explain physics data in real-time.
+
+## 2. Multi-Agent Development Strategy
+The project is built using a 4-agent autonomous loop to ensure production-grade code and mathematical accuracy:
+1. **Architect**: Strategic planner. Tasked to draft and revise high-quality implementation plans to reach the user's goal.
+2. **Coder**: Senior engineer. Implements the Architect's plan with high efficiency, modularity, and senior-level expertise in all languages (WGSL, TypeScript, React).
+3. **Tester**: Simulation specialist. Runs the code in a virtual environment to verify features and find flaws.
+4. **Judge**: Quality controller. Evaluates the final product against user instructions. If requirements aren't met, the loop repeats.
+
+**Governance**: Agents may suggest improvements or changes to the original scope, but MUST consult the user for approval before implementation. The project is only complete after 10 successful full-project review passes.
+
+## 3. Frontend Architecture & UI Layout
+The UI is designed for a "Workstation" feel, optimized for 3D manipulation:
+- **Left Sidebar**: Model & Part Library. Contains glTF silhouettes for cars (Kenney Kit) and planes (NASA Resources). Users select parts here to add to the simulation.
+- **Center & Right Viewport**: The Simulation Grid.
+    - A flat 3D surface with a visible coordinate grid.
+    - Full camera controls: Zoom, Pan, and Orientation (Orbit).
+    - Real-time flow visualization (Streamlines, Velocity Heatmaps, Pressure Clouds).
+- **Overlays & Indicators**: 
+    - **Progress Bar**: A visual indicator showing the current solver iteration or project build phase.
+    - **Aarav AI**: Floating tutor interface for Q&A and tool-calling.
+
+## 4. Technical Roadmap
+- **Phase 1**: Multi-agent setup & WebGPU LBM Engine (D2Q9 lattice).
+- **Phase 2**: UI Layout implementation (Left: Parts | Center-Right: Grid).
+- **Phase 3**: Integration of Aarav AI (Tool-use for scene control: set_part, focus_camera).
+- **Phase 4**: Airplane module & Stall physics (Emergent flow separation).
+- **Phase 5**: Open-source release & Community contribution guide.
+
+## 5. Data Model
+- **Vehicle**: id, name, type ("car" | "plane"), baseModel (glTF path), refArea.
+- **Slots**: slotId, label, category (wing, diffuser, flap, etc.), and paramRange.
+- **Computed State**: Live Cd (Drag), Cl (Lift), wakeSize, and stability.
+
+## 6. Open Source Strategy
+1. **Codebase**: MIT/Apache-2.0 licensed React/WebGPU source.
+2. **Assets**: ONLY permissively licensed assets (CC0/Public Domain). Generic silhouettes only to avoid trademark issues.

@@ -1,0 +1,171 @@
+# Handoff — What "Aarav" Is
+
+**Read this first.** This is a plain-language explanation of the product for anyone picking up the
+project cold — a new developer, an AI coding agent, a stakeholder. For implementation-level detail
+(exact solver math, phase-by-phase build steps, data model field types, the AI tutor's literal system
+prompt), follow the pointers to `plans/master-plan-merged.txt` and `prompts/master-orchestration-prompt.txt`
+— those two files are the source of truth and this document deliberately does not restate everything in
+them.
+
+---
+
+## 1. One-line description
+
+Aarav is a browser-based, 3D, interactive aerodynamics teaching tool: you put a generic car or airplane in
+a virtual wind tunnel, adjust real aero parts (wings, diffusers, ride height, flaps), and watch a genuine
+real-time physics solver — not a canned animation — compute how the airflow, drag, and lift change, while
+an AI tutor character named **Aarav** explains what's happening and can drive the scene itself.
+
+## 2. Who it's for and what it isn't
+
+- **It's for**: students, hobbyists, and curious people learning *why* cars and planes are shaped the way
+  they are — an educational tool.
+- **It is explicitly not**: a certified CFD (computational fluid dynamics) engineering tool. The numbers
+  are real physics output, but at a coarse, toy resolution appropriate for a browser tab. The app must
+  always disclose this in the UI. (Full rationale: plan §4, prompt §5.7–5.8.)
+
+## 3. The core idea that makes this different from a typical "3D configurator"
+
+Most web-based car/plane configurators fake the physics: a diffuser "helps downforce" because a developer
+hard-coded a number for it. Aarav doesn't do that. It runs an actual real-time flow solver on the GPU, and
+**every number and every visual effect is read directly off that solver's live state** — there is no
+separate "effect formula" layer that could disagree with what's on screen. When you change a part, the
+solver recomputes the flow around the new shape, and the drag/lift numbers and the visualization update
+because the underlying physics genuinely changed. (Full rationale: plan §4 "Why a real solver, not a
+lookup table"; prompt §5.1.)
+
+This is the single most important design constraint in the whole project — if a future contributor is
+ever tempted to add a quick `aeroEffect(part) -> number` shortcut instead of routing through the solver,
+that's a violation of the core product idea, not a valid optimization.
+
+## 4. How a user experiences it
+
+1. **Pick a vehicle** — a generic car or a generic airplane (never a real branded model; see §8 below).
+2. **Sit in a "workstation" layout**: a left-hand sidebar holds the model/part library; the center and
+   right of the screen is the 3D simulation grid — a flat surface with a coordinate grid, full orbit/pan/
+   zoom camera control, and the live flow visualization layered on top (streamlines, a pressure-color
+   heatmap on the body, and a wake/vortex region behind the vehicle). A progress bar overlay shows solver
+   iteration/build status, and Aarav's chat panel floats over the scene. (Layout detail: plan §3.0.)
+3. **Adjust parts** with sliders/toggles — wing angle, diffuser, front/rear ride height, flaps, rudder,
+   ailerons, elevator, angle of attack, depending on vehicle type. Each change re-shapes the geometry the
+   solver sees and the solver reacts live. (Full part lists: plan §3.4–3.5.)
+4. **Watch the readout panel** — live drag coefficient (Cd), lift/downforce coefficient (Cl), an estimated
+   top-speed impact, and a simple stability indicator — all derived from the solver's own surface force
+   integration, updating in real time as parts change.
+5. **Talk to Aarav** — ask questions, or let Aarav run a guided lesson (e.g. "ground effect and ride
+   height") where it narrates, moves the camera to the relevant part, highlights it, and can even nudge a
+   slider itself while explaining — the user watches the effect happen live rather than being told about
+   it. There's also a "challenge" mode (Aarav sets a target like "get downforce above X without raising
+   drag past Y") and a free-play mode. (Full persona/modes: plan §2; Aarav's literal system prompt:
+   prompt §6.)
+6. **Save/share** a part configuration as a link, and (teacher mode) preset a configuration + question for
+   a class.
+
+## 5. The engine, at a glance (not the full spec — see plan §4 / prompt §5 for that)
+
+- **Primary solver**: a GPU **Lattice Boltzmann Method (LBM)** solver running on WebGPU compute shaders, on
+  a coarse 3D voxel grid (~96×48×48 as a starting point) built by voxelizing the vehicle mesh. Uses a full
+  3D lattice (D3Q19 or D3Q27) — this was corrected from an earlier draft that had mistakenly specified a
+  2D lattice; both the plan and the prompt now agree on 3D.
+- **Fallback solver**: for devices without WebGPU, a WebGL2 "stable fluids" solver (Jos Stam's method) —
+  still a real Navier-Stokes solve, just coarser. This fallback is **mandatory**, not optional polish; the
+  app must never assume WebGPU is available.
+- **Device tiers**: High (full-res WebGPU LBM), Medium (reduced-res WebGPU LBM), Fallback (WebGL2), chosen
+  automatically at runtime with a manual override. All three tiers feed the exact same downstream
+  force-integration and rendering code.
+- **Numbers and visuals share one source**: Cd/Cl/wake-size come from integrating pressure and shear stress
+  over the vehicle surface each frame; streamlines, the pressure heatmap, and the wake visualization are
+  all rendered directly from that same solver field. Nothing is scripted separately.
+- **Calibration, not replacement**: the live solver's output is periodically sanity-checked against a small
+  set of offline reference points (precomputed CFD or published simplified wind-tunnel data) so it can't
+  silently drift into nonsense (e.g. negative drag) — these anchors validate the solver, they don't drive
+  it.
+- **Explicitly out of scope, permanently**: full RANS/LES CFD with proper turbulence closure. That's a
+  batch workload that can't run in real time in a browser regardless of GPU power — a different category
+  of software than this app.
+
+## 6. Aarav (the AI tutor)
+
+Aarav isn't a chatbot bolted onto a settings menu — it's wired directly into the 3D scene via Anthropic
+tool-use/function-calling. It can:
+- `set_part(slotId, value)` — change a slider/part live
+- `focus_camera(partId)` — move the camera to a part
+- `highlight(partId, durationMs)` — outline a part
+- `get_scene_state()` — read the current vehicle/part/solver state
+- `start_lesson(lessonId)` — run a guided lesson script
+
+Persona: an enthusiastic, precise, down-to-earth motorsport/aerospace engineer-teacher, never condescending,
+always grounding explanations in the specific live Cd/Cl numbers the user is currently looking at rather
+than generic textbook prose. It's explicit with users that the solver is a coarse, educational simulation
+if asked about accuracy. (Literal system prompt to use verbatim: prompt §6.)
+
+## 7. Data model, in one paragraph (full types: prompt §7 / plan §6)
+
+A `Vehicle` (car or plane) has an id, a glTF/GLB base model path, a reference area for normalizing
+coefficients, and a list of `Slot`s (wing, diffuser, ride height, flap, rudder, aileron, elevator, angle of
+attack — each a toggle or a range). Critically, a `Slot` carries **only geometry and how it deforms** — no
+`aeroEffect()` formula. The aerodynamic effect of every part is computed by the solver from the voxelized
+shape, never hand-authored. `SceneState` tracks the current vehicle, wind speed, slot values, the active
+device tier, and the live computed Cd/Cl/wake/stability numbers read straight from the solver.
+
+## 8. Hard constraints (non-negotiable, don't let these drift)
+
+- **No real, branded vehicles or liveries** — cars and planes are generic silhouettes only, both for legal
+  cleanliness and so the whole project can be openly licensed. (This is why the uploaded
+  `B777_LARC_AIR_0626.glb` — a real, identifiable Boeing 777 — is flagged as needing a decision: reference
+  geometry only, or reshaped into something generic, before it ships in-app. See plan §10.)
+- **Never fabricate exact real-world numbers** — the solver is a coarse approximation and must say so in
+  the UI.
+- **Never call the Anthropic API from client-side code** — always proxy through a backend, key stays
+  server-side.
+- **Non-programmers should be able to add a part** by supplying geometry + slot metadata (JSON) — no code,
+  no hand-authored physics.
+- **The WebGL2 fallback tier is mandatory** — the app can never assume WebGPU support.
+
+## 9. Build process for this project specifically
+
+The project is built by a 4-agent loop (Architect → Coder → Tester → Judge, looping until the Judge
+approves), operating with minimal chatter/token use and terse status updates ("Planning...", "Coding...",
+etc.). Agents may propose scope changes but must get explicit user approval before implementing them. The
+project isn't considered "done" until 10 full-project review passes complete without finding further
+improvements. (Full process rules: prompt §1–2a; plan §0.)
+
+## 10. Roadmap, in brief (full detail: plan §7, prompt §8)
+
+0. **Skeleton** — scaffold the app, workstation UI layout, placeholder generic vehicle, orbit camera. No
+   solver yet.
+1. **Core solver + MVP** — the real engineering weight: LBM + WebGL2 fallback, force integration, 3–4 car
+   part sliders, solver-driven visualization, Aarav as plain Q&A (no tool use yet).
+2. **Aarav gets hands** — tool-calling, guided lessons, quiz checkpoints.
+3. **Airplane module** — second vehicle type, stall behavior emerging from real flow separation.
+4. **Polish & community** — save/share, device-tier performance pass, accessibility, contribution guide,
+   open-source release.
+
+## 11. Open source & assets
+
+Code is MIT/Apache-2.0. Assets must be CC0/public-domain/permissively licensed and generic (no real
+manufacturer designs). The car pack — **Kenney "Car Kit" v3.1, CC0, sourced and cleared** — is already in
+`assets/kenney-car-kit/`. The plane pack (NASA Resources) still needs to go through the licensing/vetting
+process described in the open-source sourcing prompt before integration. (Full process: plan §8; see
+`prompts/open-source-sourcing-prompt.txt`.)
+
+## 12. Where to look for more
+
+| Question | Go to |
+|---|---|
+| Exact solver math, grid resolution, boundary conditions | plan §4, prompt §5 |
+| Full phase-by-phase build steps | plan §7, prompt §8.2 |
+| Exact data model types (TypeScript) | prompt §7 |
+| Aarav's literal system prompt string | prompt §6 |
+| UI layout details (workstation, progress bar) | plan §3.0 |
+| Full car/plane part lists | plan §3.4–3.5 |
+| Multi-agent process rules | prompt §1–2a, plan §0 |
+| Asset licensing process | plan §8, `prompts/open-source-sourcing-prompt.txt` |
+| Open decisions (B777 model) | plan §10 |
+| Known risks (scope, performance, licensing) | plan §9 |
+
+**Final, current versions to actually build from:**
+- `plans/master-plan-merged.txt`
+- `prompts/master-orchestration-prompt.txt`
+
+Everything else in this folder is original source material kept for reference only.

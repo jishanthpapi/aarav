@@ -1,0 +1,76 @@
+# Sourcing Prompt — Open-Source Assets for the Aarav Aerodynamics App
+
+> Use this prompt with an AI agent that has web search (e.g. Claude with web search enabled). Its job is
+> to **find, vet, and document** candidate open-source/permissively-licensed assets — it should not
+> download or embed anything itself without you reviewing the license first. Run it once per asset
+> category below, or all at once if your agent can handle a longer research task.
+
+---
+
+## Prompt to give the agent
+
+```
+You are helping me source ONLY permissively-licensed, open/free-to-use assets for an open-source
+educational aerodynamics app. For each category below, find candidate sources and report back:
+
+- Asset name / source name
+- Direct URL
+- License (must be one of: CC0, MIT, Apache-2.0, CC-BY, CC-BY-SA, or public domain — flag anything else
+  as REJECTED and explain why)
+- Attribution requirements, if any (exact text/name required, if specified by the source)
+- File format(s) available (glTF/GLB preferred for 3D models; note if conversion would be needed)
+- Rough polygon count / quality notes if visible on the listing
+- Any usage restrictions (no-commercial-use clauses, no-derivative clauses, "personal use only," etc. —
+  these disqualify it for an open-source project even if labeled "free")
+
+Do NOT recommend anything that uses a real manufacturer's car or aircraft design, branding, or livery
+(e.g. a modeled Ferrari, Boeing, or similar) even if someone has uploaded it under a permissive license
+for the model itself — the underlying vehicle design/trademark may still not be legally reusable. Prefer
+generic/original vehicle silhouettes.
+
+Categories to search:
+
+1. **Generic low-poly car body model(s)** suitable for a web (Three.js/glTF) real-time scene, ideally
+   with separable wheels and a clean base mesh I could later modify to add wing/diffuser attachment
+   points.
+2. **Generic light aircraft / small plane model** with separable control surfaces (or at least a clean
+   enough mesh that I could split flaps/rudder/ailerons out myself).
+3. **Wind tunnel environment assets** (fan, honeycomb flow straightener, tunnel walls) — optional, can
+   also be built from scratch, but flag if something good and free exists.
+4. **Reference aerodynamic data / formulas** that are public and citable for building a *simplified*
+   teaching aero model — e.g. public airfoil lift-curve data, standard drag-coefficient reference tables,
+   NASA educational aerodynamics materials. I do NOT need a full CFD solver — I need citable, simplified,
+   textbook-level reference numbers and explanations I can adapt in my own words.
+5. **Open-source geometry/analysis tools** that could inform (not necessarily run inside) the app, such
+   as NASA's OpenVSP (aircraft conceptual design geometry tool) or any open vortex-panel-method reference
+   implementations — report their license and whether they're a tool I'd run offline to generate
+   reference numbers, versus something embeddable in a browser app.
+6. **Particle/shader flow-visualization examples** (Three.js/WebGL) released under an open license
+   (MIT/Apache) that I could learn from or adapt for the streamline/pressure-map visualization.
+
+Known starting points worth checking (verify current license/status, don't assume):
+- NASA 3D Resources (github.com/nasa/NASA-3D-Resources) and NASA's Airborne Science Program aircraft
+  model gallery — NASA-produced assets are generally public domain in the US, but verify per-asset.
+- OpenGameArt.org's CC0 vehicles collection
+- Sketchfab, filtered to CC0/CC-BY downloadable models
+- NASA's OpenVSP (open-source aircraft conceptual design tool) for aircraft reference geometry —
+  check its specific open-source license terms
+- Public airfoil polar databases (e.g. UIUC Airfoil Data Site) for simplified lift/drag reference curves
+
+For each finding, end with a one-line VERDICT: APPROVED FOR USE / NEEDS ATTRIBUTION / REJECTED, and why.
+Compile the results into a single attribution-ready table I can paste into a CREDITS.md file.
+```
+
+---
+
+## What to do with the results
+
+1. Drop every "APPROVED" or "NEEDS ATTRIBUTION" item straight into a `CREDITS.md` at the project root,
+   even before you've integrated the asset — track licensing from day one, not after the fact.
+2. Anything the agent flags REJECTED, don't use, even if it looks perfect — re-run the search with a
+   narrower category instead.
+3. For the aero *data* category specifically: treat everything as reference/inspiration to build your
+   own simplified formulas from, in your own words/code — don't copy tables verbatim into the shipped
+   app without checking the specific source's reuse terms.
+4. Re-run this prompt periodically as you add new vehicles or parts — don't do a one-time sourcing pass
+   and assume it covers future additions.
