@@ -352,4 +352,4 @@ plans/, prompts/  the planning documents this project grew from
 
 ## License
 
-Not yet chosen. Pick one before publishing this repository.
+No license - you can fork it 
