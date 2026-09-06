@@ -30,17 +30,18 @@ fn spaldingResidual(uTau: f32, uT: f32, y: f32, nu: f32) -> f32 {
 fn solveUTau(uT: f32, y: f32, nu: f32) -> f32 {
   if (uT < U_MIN || y <= 0.0) { return 0.0; }
 
-  var uTau = sqrt(nu * uT / y);
-  uTau = max(uTau, 1e-8);
-
-  for (var i = 0u; i < NEWTON_ITERS; i = i + 1u) {
-    let f  = spaldingResidual(uTau, uT, y, nu);
-    let h  = max(uTau * 1e-3, 1e-9);
-    let df = (spaldingResidual(uTau + h, uT, y, nu) - f) / h;
-    if (abs(df) < 1e-12) { break; }
-    let step = f / df;
-    uTau = max(uTau - clamp(step, -0.5 * uTau, 0.5 * uTau), 1e-9);
+  // Solve for u+ in a bounded monotone interval; the former Newton
+  // iteration could overflow exp(k*u+) from a laminar initial guess.
+  let reCell = uT * y / nu;
+  var lo = 0.0;
+  var hi = min(sqrt(reCell), 80.0 / KAPPA);
+  for (var i = 0u; i < 32u; i = i + 1u) {
+    let up = 0.5 * (lo + hi);
+    let ku = KAPPA * up;
+    let yp = up + exp(-KAPPA * B_LOG) * (exp(ku) - 1.0 - ku - 0.5*ku*ku - ku*ku*ku/6.0);
+    if (up * yp > reCell) { hi = up; } else { lo = up; }
   }
+  let uTau = uT / max(0.5 * (lo + hi), 1e-8);
   return uTau;
 }
 

@@ -1,0 +1,1110 @@
+{
+  "adapter": {
+    "vendor": "intel",
+    "device": "intel-r-hd-graphics-620",
+    "description": "D3D12 driver version 31.0.101.2127"
+  },
+  "cases": [
+    {
+      "id": "resolved-block-off",
+      "grid": {
+        "nx": 32,
+        "ny": 16,
+        "nz": 16,
+        "dx": 1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "wallModel": false,
+      "reynolds": {
+        "requested": 1.25,
+        "achieved": 1.25,
+        "resolutionLimited": false,
+        "regime": "subcritical",
+        "tauPlus": 0.98,
+        "note": "Reynolds number matched directly by molecular viscosity."
+      },
+      "warmup": 1280,
+      "convergence": {
+        "converged": true,
+        "developing": false,
+        "mean": 34.702666666666616,
+        "ci95": 5.945850366733143e-14,
+        "samples": 80,
+        "stepsRun": 2560,
+        "residual": 8.741683038433918e-16
+      },
+      "elapsedSeconds": 10.359,
+      "steps": 2560,
+      "sampledSteps": 160,
+      "sampleEvery": 16,
+      "finiteAtEverySample": true,
+      "maxSpeed": 0.06688699871301651,
+      "minDensity": 0.9795546531677246,
+      "maxDensity": 1.0273420810699463,
+      "Cd": 34.702666666666616,
+      "Cl": 0,
+      "side": 0,
+      "samples": [
+        {
+          "steps": 1296,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1312,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1328,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1344,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1360,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1376,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1392,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1408,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1424,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1440,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1456,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1472,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1488,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1504,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1520,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1536,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1552,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1568,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1584,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1600,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1616,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1632,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1648,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1664,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1680,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1696,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1712,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1728,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1744,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1760,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1776,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1792,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1808,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1824,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1840,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1856,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1872,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1888,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1904,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1920,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1936,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1952,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1968,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1984,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2000,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2016,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2032,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2048,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2064,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2080,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2096,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2112,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2128,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2144,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2160,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2176,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2192,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2208,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2224,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2240,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2256,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2272,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2288,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2304,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2320,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2336,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2352,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2368,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2384,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2400,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2416,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2432,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2448,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2464,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2480,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2496,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2512,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2528,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2544,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2560,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        }
+      ],
+      "maxYPlusAcrossRun": 0,
+      "yPlus": null,
+      "geometryHash": "86d9933d6faea08db7f159741184fca85198b006ec8dc62dfc85ac0b4d0e4628",
+      "flagsHash": "b5b6d594ab545c19778d0ed4b33a9b71b5ca13fcaee72b1934b5fcefde3a8efd",
+      "solidCells": 120,
+      "referenceAreaCells": 24
+    },
+    {
+      "id": "resolved-block-on",
+      "grid": {
+        "nx": 32,
+        "ny": 16,
+        "nz": 16,
+        "dx": 1,
+        "origin": [
+          0,
+          0,
+          0
+        ]
+      },
+      "wallModel": true,
+      "reynolds": {
+        "requested": 1.25,
+        "achieved": 1.25,
+        "resolutionLimited": false,
+        "regime": "subcritical",
+        "tauPlus": 0.98,
+        "note": "Reynolds number matched directly by molecular viscosity."
+      },
+      "warmup": 1280,
+      "convergence": {
+        "converged": true,
+        "developing": false,
+        "mean": 34.702666666666616,
+        "ci95": 5.945850366733143e-14,
+        "samples": 80,
+        "stepsRun": 2560,
+        "residual": 8.741683038433918e-16
+      },
+      "elapsedSeconds": 13.402,
+      "steps": 2560,
+      "sampledSteps": 160,
+      "sampleEvery": 16,
+      "finiteAtEverySample": true,
+      "maxSpeed": 0.06688699871301651,
+      "minDensity": 0.9795546531677246,
+      "maxDensity": 1.0273420810699463,
+      "Cd": 34.702666666666616,
+      "Cl": 0,
+      "side": 0,
+      "samples": [
+        {
+          "steps": 1296,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1312,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1328,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1344,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1360,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1376,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1392,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1408,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1424,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1440,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1456,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1472,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1488,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1504,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1520,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1536,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1552,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1568,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1584,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1600,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1616,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1632,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1648,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1664,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1680,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1696,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1712,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1728,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1744,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1760,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1776,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1792,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1808,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1824,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1840,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1856,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1872,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1888,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1904,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1920,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1936,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1952,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1968,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 1984,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2000,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2016,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2032,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2048,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2064,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2080,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2096,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2112,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2128,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2144,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2160,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2176,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2192,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2208,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2224,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2240,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2256,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2272,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2288,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2304,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2320,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2336,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2352,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2368,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2384,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2400,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2416,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2432,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2448,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2464,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2480,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2496,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2512,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2528,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2544,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        },
+        {
+          "steps": 2560,
+          "Cd": 34.70266666666666,
+          "Cl": 0,
+          "side": 0
+        }
+      ],
+      "maxYPlusAcrossRun": 0.4151868224143982,
+      "yPlus": {
+        "min": 0.06991159170866013,
+        "max": 0.40656745433807373,
+        "median": 0.22040380537509918,
+        "inBandFraction": 0,
+        "resolvedFraction": 1,
+        "nonFinite": 0,
+        "wallCells": 208
+      },
+      "geometryHash": "86d9933d6faea08db7f159741184fca85198b006ec8dc62dfc85ac0b4d0e4628",
+      "flagsHash": "b5b6d594ab545c19778d0ed4b33a9b71b5ca13fcaee72b1934b5fcefde3a8efd",
+      "solidCells": 120,
+      "referenceAreaCells": 24
+    }
+  ],
+  "gates": [
+    {
+      "id": "wall-model-inert-when-resolved",
+      "pass": true,
+      "measured": true,
+      "expected": "<1% change when the boundary layer is already resolved",
+      "deviation": 0,
+      "checker": {
+        "id": "wall-model-inert-when-resolved",
+        "pass": true,
+        "measured": "Cd 34.7027 -> 34.7027 (0.00%), max y+ 0.42",
+        "expected": "<1% change when the boundary layer is already resolved",
+        "deviation": 0
+      }
+    },
+    {
+      "id": "y-plus-band",
+      "measured": true,
+      "checker": {
+        "id": "y-plus-band",
+        "pass": true,
+        "measured": "y+ 0.1..0.4 (median 0.2), 0% in band, 100% resolved",
+        "expected": "finite everywhere; coverage below 50% must be disclosed in the UI",
+        "deviation": 1
+      },
+      "uiMarkup": "<div class=\"space-y-1.5\"><div class=\"flex items-baseline justify-between gap-3\"><span class=\"text-[10px] uppercase tracking-widest text-white/35\">Wall y+</span><span class=\"font-mono text-[11px] tabular-nums text-amber-300/90\">0 med, 0-0</span></div><div class=\"flex items-baseline justify-between gap-3\"><span class=\"text-[10px] uppercase tracking-widest text-white/35\">y+ in band</span><span class=\"font-mono text-[11px] tabular-nums text-amber-300/90\">0 % of wall cells</span></div><div class=\"flex gap-2 rounded-lg border border-amber-500/20 bg-amber-500/5 p-2\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-triangle-alert mt-0.5 h-3 w-3 shrink-0 text-amber-400/80\"><path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\"></path><path d=\"M12 9v4\"></path><path d=\"M12 17h.01\"></path></svg><p class=\"text-[10px] leading-relaxed text-white/55\">Only 0% of the wall-adjacent cells are in the y+ band at this resolution. This does not validate attached-flow assumptions or separated-flow accuracy.</p></div></div>"
+    }
+  ],
+  "errors": []
+}

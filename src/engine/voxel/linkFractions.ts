@@ -1,4 +1,5 @@
 import { CELL, type GridSpec } from './Voxelizer';
+import { validateVoxelInput } from './inputLimits';
 
 const D3Q19: [number, number, number][] = [
   [0,0,0],[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1],
@@ -39,6 +40,9 @@ export function computeLinkFractions(
   grid: GridSpec,
   bucket = 4,
 ): Float32Array {
+  validateVoxelInput({ positions, grid });
+  if (!(flags instanceof Uint32Array) || flags.length !== grid.nx * grid.ny * grid.nz || !Number.isSafeInteger(bucket) || bucket < 1)
+    throw new Error('Invalid flags or spatial bucket size.');
   const { nx, ny, nz, dx, origin } = grid;
   const cells = nx * ny * nz;
   const out = new Float32Array(cells * 19).fill(0.5);

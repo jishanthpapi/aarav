@@ -311,7 +311,7 @@ Two things are worth open-sourcing separately:
 Don't use scraped/branded real-car or real-aircraft models or manufacturer liveries — stick to generic
 silhouettes to avoid IP issues, which also keeps the whole project cleanly open-sourceable.
 
-**Codebase license**: MIT/Apache-2.0 for the React/WebGPU source. **Assets**: CC0/Public Domain only —
+**Codebase license**: MIT for the React/WebGPU source. **Assets**: CC0/Public Domain only —
 generic silhouettes only, to avoid trademark issues. [Explicit license/asset-policy line carried forward
 from v2, consistent with the fuller sourcing process above.]
 

@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-06",
+  "defaultEnabled": false,
+  "baseline": "Before wall shader integration; active solver has no wall treatment.",
+  "gates": [
+    {"id":"log-law-recovery","status":"not measured","reason":"Requires a developed channel profile benchmark."},
+    {"id":"flat-plate-skin-friction","status":"not measured","reason":"Requires several developed flat-plate Reynolds cases."},
+    {"id":"y-plus-band","status":"not measured","reason":"Active baseline has no y-plus buffer."},
+    {"id":"wall-model-inert-when-resolved","status":"not measured","reason":"Requires a resolved paired on/off force benchmark."},
+    {"id":"stall-angle-preserved","status":"not measured","reason":"Requires a converged angle sweep with model off and on."}
+  ],
+  "note": "Gate unit tests and shader compilation are not substitutes for these physical measurements. Do not enable by default until measured gates pass."
+}

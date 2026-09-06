@@ -1,0 +1,33 @@
+{
+  "scope": "car geometry/worker controls and TRT integration with collision-buffer correction",
+  "environment": {
+    "node": "24.19.0",
+    "typescript": "5.9.3",
+    "webgpu": "0.6.0",
+    "tsx": "4.23.13"
+  },
+  "sourceTests": {
+    "command": "npm test",
+    "passed": 12,
+    "failed": 0,
+    "skipped": 0
+  },
+  "build": {
+    "command": "npm run build",
+    "status": "passed",
+    "warning": "Application chunk larger than 500 kB"
+  },
+  "shaderApiValidation": {
+    "backend": "Dawn null",
+    "status": "passed",
+    "numericalExecution": false
+  },
+  "numericalSmoke": {
+    "kind": "executing-GPU smoke regression, not aerodynamic validation",
+    "status": "unavailable",
+    "tests": [],
+    "reason": "No executing WebGPU adapter. No numerical tests were run."
+  },
+  "browserQA": "not run",
+  "aerodynamicValidation": "not performed"
+}

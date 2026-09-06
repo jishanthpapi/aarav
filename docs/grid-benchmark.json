@@ -1,0 +1,326 @@
+{
+  "timestamp": "2026-09-06T00:10:45.702Z",
+  "adapter": {
+    "vendor": "intel",
+    "architecture": "gen-9",
+    "device": "intel-r-hd-graphics-620",
+    "description": "D3D12 driver version 31.0.101.2127"
+  },
+  "adapterLimits": {
+    "maxStorageBufferBindingSize": 2147483648,
+    "maxBufferSize": 2147483648,
+    "maxComputeInvocationsPerWorkgroup": 1024,
+    "maxComputeWorkgroupStorageSize": 32768,
+    "maxComputeWorkgroupsPerDimension": 65535,
+    "maxStorageBuffersPerShaderStage": 16
+  },
+  "deviceLimits": {
+    "maxStorageBufferBindingSize": 134217728,
+    "maxBufferSize": 268435456,
+    "maxComputeInvocationsPerWorkgroup": 256,
+    "maxComputeWorkgroupStorageSize": 16384,
+    "maxComputeWorkgroupsPerDimension": 65535,
+    "maxStorageBuffersPerShaderStage": 8
+  },
+  "timer": "wall clock around step(2) and await queue.onSubmittedWorkDone(); includes CPU submit and GPU completion, excludes render and geometry processing",
+  "allocations": "264 bytes/cell + 48 bytes GPU buffers; CPU geometry/readback and renderer additional",
+  "shaderSha256": "de4afa5db9f9fbe9637a86bd167677f7177b727559ad8d49d27019e7964bca79",
+  "rows": [
+    {
+      "id": "prior-baseline-current-24-cpl-400k-budget",
+      "budget": 400000,
+      "grid": {
+        "nx": 177,
+        "ny": 36,
+        "nz": 39,
+        "dx": 0.28835063437139563,
+        "origin": [
+          -15,
+          -0.28835063437139563,
+          -5.622837370242215
+        ]
+      },
+      "cellsPerLength": 14.738999999999999,
+      "cells": 248508,
+      "gpuBytes": 65606160,
+      "gpuMiB": 62.56690979003906,
+      "voxelizationMs": 105.8488000035286,
+      "linkFractionsMs": 189.85089999437332,
+      "solidCells": 434,
+      "pipelineAndBufferInitMs": 1004.3240999877453,
+      "twoStepBatchMs": [
+        149.2039999961853,
+        200.5600999891758,
+        138.78010000288486,
+        135.9083999991417,
+        145.77600000798702,
+        149.84049999713898,
+        166.68810001015663,
+        139.72149999439716,
+        145.03550000488758,
+        145.93940000236034,
+        136.4611999988556,
+        196.35570000112057
+      ],
+      "medianTwoStepMs": 145.85770000517368,
+      "p95TwoStepMs": 200.5600999891758,
+      "medianStepMs": 72.92885000258684,
+      "solverOnlyTwoStepFramesPerSecond": 6.855997317690662,
+      "readbackMs": 3.626900002360344,
+      "stepsRun": 32,
+      "field": {
+        "nonFinite": 0,
+        "nonPositiveDensity": 0,
+        "minDensity": 0.9669221043586731,
+        "maxDensity": 1.0552119016647339,
+        "maxSpeed": 0.06297432725719626,
+        "finiteSmokePassed": true
+      },
+      "forceIntegers": [
+        -278023,
+        -11067,
+        -5,
+        2280
+      ],
+      "note": "Recovered exactly from prior benchmark console after interrupted report write."
+    },
+    {
+      "id": "fit-400000",
+      "budget": 400000,
+      "grid": {
+        "nx": 207,
+        "ny": 42,
+        "nz": 46,
+        "dx": 0.2463768115942029,
+        "origin": [
+          -15,
+          -0.2463768115942029,
+          -5.666666666666667
+        ]
+      },
+      "cellsPerLength": 17.25,
+      "cells": 399924,
+      "gpuBytes": 105579984,
+      "gpuMiB": 100.68891906738281,
+      "voxelizationMs": 159.1080999970436,
+      "linkFractionsMs": 473.8014000058174,
+      "solidCells": 675,
+      "pipelineAndBufferInitMs": 1592.0033999979496,
+      "twoStepBatchMs": [
+        241.84029999375343,
+        204.0552999973297,
+        203.27450001239777,
+        204.51199999451637,
+        204.3880000114441,
+        204.04719999432564,
+        204.36419999599457,
+        196.82960000634193,
+        240.52189999818802,
+        199.60109999775887,
+        200.2970999777317,
+        200.8710000216961
+      ],
+      "medianTwoStepMs": 204.05124999582767,
+      "p95TwoStepMs": 241.84029999375343,
+      "medianStepMs": 102.02562499791384,
+      "solverOnlyTwoStepFramesPerSecond": 4.900729596218829,
+      "readbackMs": 4.4453000128269196,
+      "stepsRun": 32,
+      "field": {
+        "nonFinite": 0,
+        "nonPositiveDensity": 0,
+        "minDensity": 0.9559235572814941,
+        "maxDensity": 1.0552119016647339,
+        "maxSpeed": 0.06828248327307,
+        "finiteSmokePassed": true
+      },
+      "forceIntegers": [
+        -475893,
+        2992,
+        2,
+        3176
+      ]
+    },
+    {
+      "id": "fit-800000",
+      "budget": 800000,
+      "grid": {
+        "nx": 260,
+        "ny": 53,
+        "nz": 58,
+        "dx": 0.19615384615384615,
+        "origin": [
+          -15,
+          -0.19615384615384615,
+          -5.688461538461539
+        ]
+      },
+      "cellsPerLength": 21.666666666666668,
+      "cells": 799240,
+      "gpuBytes": 210999408,
+      "gpuMiB": 201.22471618652344,
+      "voxelizationMs": 216.46880000829697,
+      "linkFractionsMs": 498.6292999982834,
+      "solidCells": 1243,
+      "pipelineAndBufferInitMs": 1651.553200006485,
+      "twoStepBatchMs": [
+        402.9375,
+        401.4268000125885,
+        444.98230001330376,
+        392.0285999774933,
+        405.10830000042915,
+        405.3967999815941,
+        407.79769998788834,
+        455.87229999899864,
+        400.4030999839306,
+        401.0276000201702,
+        397.66219997406006,
+        398.23860001564026
+      ],
+      "medianTwoStepMs": 402.18215000629425,
+      "p95TwoStepMs": 455.87229999899864,
+      "medianStepMs": 201.09107500314713,
+      "solverOnlyTwoStepFramesPerSecond": 2.486435561559233,
+      "readbackMs": 13.129099994897842,
+      "stepsRun": 32,
+      "field": {
+        "nonFinite": 0,
+        "nonPositiveDensity": 0,
+        "minDensity": 0.9669221043586731,
+        "maxDensity": 1.0552119016647339,
+        "maxSpeed": 0.07105189464917239,
+        "finiteSmokePassed": true
+      },
+      "forceIntegers": [
+        -727636,
+        -27506,
+        -2,
+        4912
+      ],
+      "note": "Recovered exactly from benchmark console after process exited awaiting redundant post-destruction queue callback."
+    },
+    {
+      "id": "fit-1200000",
+      "budget": 1200000,
+      "grid": {
+        "nx": 299,
+        "ny": 60,
+        "nz": 66,
+        "dx": 0.17083333333333334,
+        "origin": [
+          -15,
+          -0.17083333333333334,
+          -5.6375
+        ]
+      },
+      "cellsPerLength": 24.878048780487806,
+      "cells": 1184040,
+      "gpuBytes": 312586608,
+      "gpuMiB": 298.10581970214844,
+      "voxelizationMs": 172.58700001239777,
+      "linkFractionsMs": 501.35099998116493,
+      "solidCells": 1749,
+      "pipelineAndBufferInitMs": 988.4352999925613,
+      "twoStepBatchMs": [
+        557.5227999985218,
+        563.7273000180721,
+        663.0709999799728,
+        584.6571999788284,
+        587.0855000019073,
+        572.881600022316,
+        561.717099994421,
+        569.8802999854088,
+        564.5918999910355,
+        658.8329000174999,
+        581.6777000129223,
+        578.19240000844
+      ],
+      "medianTwoStepMs": 575.537000015378,
+      "p95TwoStepMs": 663.0709999799728,
+      "medianStepMs": 287.768500007689,
+      "solverOnlyTwoStepFramesPerSecond": 1.7375077535819254,
+      "readbackMs": 28.508799999952316,
+      "stepsRun": 32,
+      "field": {
+        "nonFinite": 0,
+        "nonPositiveDensity": 0,
+        "minDensity": 0.9669221043586731,
+        "maxDensity": 1.0552119016647339,
+        "maxSpeed": 0.0692798986776885,
+        "finiteSmokePassed": true
+      },
+      "forceIntegers": [
+        -918746,
+        -63338,
+        -4,
+        6080
+      ]
+    },
+    {
+      "id": "fit-1700000",
+      "budget": 1700000,
+      "grid": {
+        "nx": 337,
+        "ny": 68,
+        "nz": 74,
+        "dx": 0.15135135135135136,
+        "origin": [
+          -15,
+          -0.15135135135135136,
+          -5.6000000000000005
+        ]
+      },
+      "cellsPerLength": 28.080357142857142,
+      "cells": 1695784,
+      "gpuBytes": 447687024,
+      "gpuMiB": 426.94761657714844,
+      "voxelizationMs": 226.2844000160694,
+      "linkFractionsMs": 715.7301000058651,
+      "solidCells": 2056,
+      "pipelineAndBufferInitMs": 1503.7540999948978,
+      "twoStepBatchMs": [
+        829.7049999833107,
+        806.7288999855518,
+        823.9426999986172,
+        828.9153999984264,
+        824.0898999869823,
+        799.3010999858379,
+        802.0782999992371,
+        798.9788999855518,
+        827.1049000024796,
+        825.7317999899387,
+        881.3861999809742,
+        816.4246000051498
+      ],
+      "medianTwoStepMs": 824.0162999927998,
+      "p95TwoStepMs": 881.3861999809742,
+      "medianStepMs": 412.0081499963999,
+      "solverOnlyTwoStepFramesPerSecond": 1.2135682267556334,
+      "readbackMs": 51.375200003385544,
+      "stepsRun": 32,
+      "field": {
+        "nonFinite": 0,
+        "nonPositiveDensity": 0,
+        "minDensity": 0.9669221043586731,
+        "maxDensity": 1.0552119016647339,
+        "maxSpeed": 0.06873396927386029,
+        "finiteSmokePassed": true
+      },
+      "forceIntegers": [
+        -543465,
+        2716,
+        2,
+        7514
+      ]
+    }
+  ],
+  "errors": [],
+  "conclusion": "All five grids produced finite positive-density 32-step fields. This is an execution smoke test, not aerodynamic validation. 399,924 cells is an upper practical default on Intel HD620; 1,695,784 cells fits conservative default storage limits but takes ~824 ms per two-step batch, so is suitable only as an explicitly slower fine-grid mode. GPU submission backpressure is needed when rendering can enqueue work faster than GPU completion.",
+  "notes": [
+    "Measured sequentially, one solver active at a time, 8 warmup steps then 12 two-step batches each awaited via queue.onSubmittedWorkDone, followed by field/force readback.",
+    "Timings include CPU command submission plus GPU completion; no simultaneous rendering or graphics work. Browser performance can differ.",
+    "GPU buffer accounting excludes CPU flags/fractions/snapshots and renderer allocations. Peak tested GPU solver allocation426.95MiB <512MiB cap.",
+    "Baseline console recovered from previous invocation; 400k through1.7M measured in follow-up.",
+    "Counts use current planner geometric extents with an external binary search on requested resolution to fit each cell budget without its old15-percent fallback."
+  ]
+}

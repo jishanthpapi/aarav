@@ -2,7 +2,7 @@ import { TriangleAlert } from 'lucide-react';
 import type { SimStatus } from '../../engine/useAaravSimulation';
 
 export function SolverStatusBanner({ status }: { status: SimStatus }) {
-  if (status.kind === 'running') return null;
+  if (status.kind === 'running' || status.kind === 'voxelizing') return null;
 
   const message =
     status.kind === 'unsupported' ? status.reason :

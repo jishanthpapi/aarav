@@ -1,0 +1,27 @@
+TAP version 13
+# Subtest: executing GPU: a uniform empty free-slip tunnel preserves inlet velocity
+not ok 1 - executing GPU: a uniform empty free-slip tunnel preserves inlet velocity
+  ---
+  duration_ms: 1469.563
+  location: 'file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/physical-runtime.test.mjs:9:1'
+  failureType: 'testCodeFailure'
+  error: 'Uniform-flow velocity error: 0.048157110414467755'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/physical-runtime.test.mjs:17:12)
+    async Test.run (node:internal/test_runner/test:632:9)
+    async startSubtest (node:internal/test_runner/harness:208:3)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2486.4005

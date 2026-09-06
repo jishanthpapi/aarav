@@ -1,0 +1,3642 @@
+{
+  "date": "2026-09-06",
+  "projectLicense": "MIT",
+  "newDirectDependencies": [
+    "@anthropic-ai/sdk",
+    "@types/node"
+  ],
+  "scope": "Installed package manifests and lockfile licenses. No dependency versions changed in this security task.",
+  "note": "Project source remains MIT. Third-party works retain their own licenses; Apache-2.0 patent/NOTICE and CC-BY attribution obligations still apply.",
+  "entries": [
+    {
+      "path": "node_modules/@alloc/quick-lru",
+      "name": "@alloc/quick-lru",
+      "version": "5.3.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@alloc/quick-lru/license"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@anthropic-ai/sdk",
+      "name": "@anthropic-ai/sdk",
+      "version": "0.32.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@anthropic-ai/sdk/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@anthropic-ai/sdk/node_modules/@types/node",
+      "name": "@types/node",
+      "version": "18.19.130",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@anthropic-ai/sdk/node_modules/@types/node/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/code-frame",
+      "name": "@babel/code-frame",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/code-frame/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/compat-data",
+      "name": "@babel/compat-data",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/compat-data/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/core",
+      "name": "@babel/core",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/core/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/generator",
+      "name": "@babel/generator",
+      "version": "7.29.8",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/generator/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/helper-compilation-targets",
+      "name": "@babel/helper-compilation-targets",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/helper-compilation-targets/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/helper-globals",
+      "name": "@babel/helper-globals",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/helper-globals/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/helper-module-imports",
+      "name": "@babel/helper-module-imports",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/helper-module-imports/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/helper-module-transforms",
+      "name": "@babel/helper-module-transforms",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/helper-module-transforms/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/helper-plugin-utils",
+      "name": "@babel/helper-plugin-utils",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/helper-plugin-utils/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/helper-string-parser",
+      "name": "@babel/helper-string-parser",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/helper-string-parser/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/helper-validator-identifier",
+      "name": "@babel/helper-validator-identifier",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/helper-validator-identifier/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/helper-validator-option",
+      "name": "@babel/helper-validator-option",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/helper-validator-option/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/helpers",
+      "name": "@babel/helpers",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/helpers/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/parser",
+      "name": "@babel/parser",
+      "version": "7.29.8",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/parser/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/plugin-transform-react-jsx-self",
+      "name": "@babel/plugin-transform-react-jsx-self",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/plugin-transform-react-jsx-self/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/plugin-transform-react-jsx-source",
+      "name": "@babel/plugin-transform-react-jsx-source",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/plugin-transform-react-jsx-source/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/runtime",
+      "name": "@babel/runtime",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/runtime/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/template",
+      "name": "@babel/template",
+      "version": "7.29.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/template/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/traverse",
+      "name": "@babel/traverse",
+      "version": "7.29.8",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/traverse/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@babel/types",
+      "name": "@babel/types",
+      "version": "7.29.8",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@babel/types/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/aix-ppc64",
+      "name": "@esbuild/aix-ppc64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/android-arm",
+      "name": "@esbuild/android-arm",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/android-arm64",
+      "name": "@esbuild/android-arm64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/android-x64",
+      "name": "@esbuild/android-x64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/darwin-arm64",
+      "name": "@esbuild/darwin-arm64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/darwin-x64",
+      "name": "@esbuild/darwin-x64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/freebsd-arm64",
+      "name": "@esbuild/freebsd-arm64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/freebsd-x64",
+      "name": "@esbuild/freebsd-x64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/linux-arm",
+      "name": "@esbuild/linux-arm",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/linux-arm64",
+      "name": "@esbuild/linux-arm64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/linux-ia32",
+      "name": "@esbuild/linux-ia32",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/linux-loong64",
+      "name": "@esbuild/linux-loong64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/linux-mips64el",
+      "name": "@esbuild/linux-mips64el",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/linux-ppc64",
+      "name": "@esbuild/linux-ppc64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/linux-riscv64",
+      "name": "@esbuild/linux-riscv64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/linux-s390x",
+      "name": "@esbuild/linux-s390x",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/linux-x64",
+      "name": "@esbuild/linux-x64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/netbsd-arm64",
+      "name": "@esbuild/netbsd-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/netbsd-x64",
+      "name": "@esbuild/netbsd-x64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/openbsd-arm64",
+      "name": "@esbuild/openbsd-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/openbsd-x64",
+      "name": "@esbuild/openbsd-x64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/openharmony-arm64",
+      "name": "@esbuild/openharmony-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/sunos-x64",
+      "name": "@esbuild/sunos-x64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/win32-arm64",
+      "name": "@esbuild/win32-arm64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/win32-ia32",
+      "name": "@esbuild/win32-ia32",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@esbuild/win32-x64",
+      "name": "@esbuild/win32-x64",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@jridgewell/gen-mapping",
+      "name": "@jridgewell/gen-mapping",
+      "version": "0.3.13",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@jridgewell/gen-mapping/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@jridgewell/remapping",
+      "name": "@jridgewell/remapping",
+      "version": "2.3.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@jridgewell/remapping/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@jridgewell/resolve-uri",
+      "name": "@jridgewell/resolve-uri",
+      "version": "3.1.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@jridgewell/resolve-uri/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@jridgewell/sourcemap-codec",
+      "name": "@jridgewell/sourcemap-codec",
+      "version": "1.6.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@jridgewell/sourcemap-codec/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@jridgewell/trace-mapping",
+      "name": "@jridgewell/trace-mapping",
+      "version": "0.3.31",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@jridgewell/trace-mapping/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@mediapipe/tasks-vision",
+      "name": "@mediapipe/tasks-vision",
+      "version": "0.10.17",
+      "license": "Apache-2.0",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@monogrid/gainmap-js",
+      "name": "@monogrid/gainmap-js",
+      "version": "3.4.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@monogrid/gainmap-js/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@napi-rs/lzma-linux-x64-gnu",
+      "name": "@napi-rs/lzma-linux-x64-gnu",
+      "version": "1.5.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@nodelib/fs.scandir",
+      "name": "@nodelib/fs.scandir",
+      "version": "2.1.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@nodelib/fs.scandir/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@nodelib/fs.stat",
+      "name": "@nodelib/fs.stat",
+      "version": "2.0.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@nodelib/fs.stat/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@nodelib/fs.walk",
+      "name": "@nodelib/fs.walk",
+      "version": "1.2.8",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@nodelib/fs.walk/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@react-spring/animated",
+      "name": "@react-spring/animated",
+      "version": "9.7.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@react-spring/animated/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@react-spring/core",
+      "name": "@react-spring/core",
+      "version": "9.7.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@react-spring/core/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@react-spring/rafz",
+      "name": "@react-spring/rafz",
+      "version": "9.7.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@react-spring/rafz/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@react-spring/shared",
+      "name": "@react-spring/shared",
+      "version": "9.7.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@react-spring/shared/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@react-spring/three",
+      "name": "@react-spring/three",
+      "version": "9.7.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@react-spring/three/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@react-spring/types",
+      "name": "@react-spring/types",
+      "version": "9.7.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@react-spring/types/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@react-three/drei",
+      "name": "@react-three/drei",
+      "version": "9.122.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@react-three/drei/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@react-three/drei/node_modules/zustand",
+      "name": "zustand",
+      "version": "5.0.15",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@react-three/drei/node_modules/zustand/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@react-three/fiber",
+      "name": "@react-three/fiber",
+      "version": "8.18.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@react-three/fiber/node_modules/zustand",
+      "name": "zustand",
+      "version": "3.7.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@react-three/fiber/node_modules/zustand/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rolldown/pluginutils",
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.0-beta.27",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@rolldown/pluginutils/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-android-arm-eabi",
+      "name": "@rollup/rollup-android-arm-eabi",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-android-arm64",
+      "name": "@rollup/rollup-android-arm64",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-darwin-arm64",
+      "name": "@rollup/rollup-darwin-arm64",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-darwin-x64",
+      "name": "@rollup/rollup-darwin-x64",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-freebsd-arm64",
+      "name": "@rollup/rollup-freebsd-arm64",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-freebsd-x64",
+      "name": "@rollup/rollup-freebsd-x64",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-arm-gnueabihf",
+      "name": "@rollup/rollup-linux-arm-gnueabihf",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-arm-musleabihf",
+      "name": "@rollup/rollup-linux-arm-musleabihf",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-arm64-gnu",
+      "name": "@rollup/rollup-linux-arm64-gnu",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-arm64-musl",
+      "name": "@rollup/rollup-linux-arm64-musl",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-loong64-gnu",
+      "name": "@rollup/rollup-linux-loong64-gnu",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-loong64-musl",
+      "name": "@rollup/rollup-linux-loong64-musl",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-ppc64-gnu",
+      "name": "@rollup/rollup-linux-ppc64-gnu",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-ppc64-musl",
+      "name": "@rollup/rollup-linux-ppc64-musl",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-riscv64-gnu",
+      "name": "@rollup/rollup-linux-riscv64-gnu",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-riscv64-musl",
+      "name": "@rollup/rollup-linux-riscv64-musl",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-s390x-gnu",
+      "name": "@rollup/rollup-linux-s390x-gnu",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-x64-gnu",
+      "name": "@rollup/rollup-linux-x64-gnu",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-linux-x64-musl",
+      "name": "@rollup/rollup-linux-x64-musl",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-openbsd-x64",
+      "name": "@rollup/rollup-openbsd-x64",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-openharmony-arm64",
+      "name": "@rollup/rollup-openharmony-arm64",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-win32-arm64-msvc",
+      "name": "@rollup/rollup-win32-arm64-msvc",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-win32-ia32-msvc",
+      "name": "@rollup/rollup-win32-ia32-msvc",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-win32-x64-gnu",
+      "name": "@rollup/rollup-win32-x64-gnu",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@rollup/rollup-win32-x64-msvc",
+      "name": "@rollup/rollup-win32-x64-msvc",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/babel__core",
+      "name": "@types/babel__core",
+      "version": "7.20.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/babel__core/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/babel__generator",
+      "name": "@types/babel__generator",
+      "version": "7.27.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/babel__generator/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/babel__template",
+      "name": "@types/babel__template",
+      "version": "7.4.4",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/babel__template/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/babel__traverse",
+      "name": "@types/babel__traverse",
+      "version": "7.28.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/babel__traverse/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/draco3d",
+      "name": "@types/draco3d",
+      "version": "1.4.10",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/draco3d/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/estree",
+      "name": "@types/estree",
+      "version": "1.0.9",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/estree/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/node",
+      "name": "@types/node",
+      "version": "20.14.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/node/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/node-fetch",
+      "name": "@types/node-fetch",
+      "version": "2.6.13",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/node-fetch/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/offscreencanvas",
+      "name": "@types/offscreencanvas",
+      "version": "2019.7.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/offscreencanvas/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/prop-types",
+      "name": "@types/prop-types",
+      "version": "15.7.15",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/prop-types/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/react",
+      "name": "@types/react",
+      "version": "18.3.31",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/react/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/react-dom",
+      "name": "@types/react-dom",
+      "version": "18.3.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/react-dom/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/react-reconciler",
+      "name": "@types/react-reconciler",
+      "version": "0.26.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/react-reconciler/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/stats.js",
+      "name": "@types/stats.js",
+      "version": "0.17.4",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/stats.js/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/three",
+      "name": "@types/three",
+      "version": "0.160.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/three/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@types/webxr",
+      "name": "@types/webxr",
+      "version": "0.5.24",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@types/webxr/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@use-gesture/core",
+      "name": "@use-gesture/core",
+      "version": "10.3.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@use-gesture/core/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@use-gesture/react",
+      "name": "@use-gesture/react",
+      "version": "10.3.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@use-gesture/react/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@vitejs/plugin-react",
+      "name": "@vitejs/plugin-react",
+      "version": "4.7.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@vitejs/plugin-react/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/@webgpu/types",
+      "name": "@webgpu/types",
+      "version": "0.1.72",
+      "license": "BSD-3-Clause",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/@webgpu/types/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/abort-controller",
+      "name": "abort-controller",
+      "version": "3.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/abort-controller/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/agentkeepalive",
+      "name": "agentkeepalive",
+      "version": "4.6.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/agentkeepalive/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/any-promise",
+      "name": "any-promise",
+      "version": "1.3.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/any-promise/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/anymatch",
+      "name": "anymatch",
+      "version": "3.1.3",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/anymatch/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/arg",
+      "name": "arg",
+      "version": "5.0.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/arg/LICENSE.md"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/asynckit",
+      "name": "asynckit",
+      "version": "0.4.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/asynckit/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/autoprefixer",
+      "name": "autoprefixer",
+      "version": "10.5.4",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/autoprefixer/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/base64-js",
+      "name": "base64-js",
+      "version": "1.5.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/base64-js/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/baseline-browser-mapping",
+      "name": "baseline-browser-mapping",
+      "version": "2.11.20",
+      "license": "Apache-2.0",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/baseline-browser-mapping/LICENSE.txt"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/bidi-js",
+      "name": "bidi-js",
+      "version": "1.0.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/bidi-js/LICENSE.txt"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/binary-extensions",
+      "name": "binary-extensions",
+      "version": "2.3.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/binary-extensions/license"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/braces",
+      "name": "braces",
+      "version": "3.0.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/braces/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/browserslist",
+      "name": "browserslist",
+      "version": "4.28.8",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/browserslist/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/buffer",
+      "name": "buffer",
+      "version": "6.0.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/buffer/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/call-bind-apply-helpers",
+      "name": "call-bind-apply-helpers",
+      "version": "1.0.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/call-bind-apply-helpers/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/camelcase-css",
+      "name": "camelcase-css",
+      "version": "2.0.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/camelcase-css/license"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/camera-controls",
+      "name": "camera-controls",
+      "version": "2.10.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/camera-controls/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/caniuse-lite",
+      "name": "caniuse-lite",
+      "version": "1.0.30001810",
+      "license": "CC-BY-4.0",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/caniuse-lite/LICENSE"
+      ],
+      "disposition": "Data attribution required; retain author, source, license and changes notice."
+    },
+    {
+      "path": "node_modules/chokidar",
+      "name": "chokidar",
+      "version": "3.6.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/chokidar/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/chokidar/node_modules/glob-parent",
+      "name": "glob-parent",
+      "version": "5.1.2",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/chokidar/node_modules/glob-parent/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/combined-stream",
+      "name": "combined-stream",
+      "version": "1.0.8",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/combined-stream/License"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/commander",
+      "name": "commander",
+      "version": "4.1.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/commander/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/convert-source-map",
+      "name": "convert-source-map",
+      "version": "2.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/convert-source-map/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/cross-env",
+      "name": "cross-env",
+      "version": "7.0.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/cross-env/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/cross-spawn",
+      "name": "cross-spawn",
+      "version": "7.0.6",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/cross-spawn/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/cssesc",
+      "name": "cssesc",
+      "version": "3.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/csstype",
+      "name": "csstype",
+      "version": "3.2.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/csstype/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/debug",
+      "name": "debug",
+      "version": "4.4.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/debug/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/delayed-stream",
+      "name": "delayed-stream",
+      "version": "1.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/delayed-stream/License"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/detect-gpu",
+      "name": "detect-gpu",
+      "version": "5.0.70",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/detect-gpu/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/didyoumean",
+      "name": "didyoumean",
+      "version": "1.2.2",
+      "license": "Apache-2.0",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/didyoumean/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/dlv",
+      "name": "dlv",
+      "version": "1.1.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/draco3d",
+      "name": "draco3d",
+      "version": "1.5.7",
+      "license": "Apache-2.0",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/dunder-proto",
+      "name": "dunder-proto",
+      "version": "1.0.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/dunder-proto/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/electron-to-chromium",
+      "name": "electron-to-chromium",
+      "version": "1.5.420",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/electron-to-chromium/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/es-define-property",
+      "name": "es-define-property",
+      "version": "1.0.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/es-define-property/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/es-errors",
+      "name": "es-errors",
+      "version": "1.3.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/es-errors/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/es-object-atoms",
+      "name": "es-object-atoms",
+      "version": "1.1.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/es-object-atoms/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/es-set-tostringtag",
+      "name": "es-set-tostringtag",
+      "version": "2.1.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/es-set-tostringtag/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/esbuild",
+      "name": "esbuild",
+      "version": "0.21.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/esbuild/LICENSE.md"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/escalade",
+      "name": "escalade",
+      "version": "3.2.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/escalade/license"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/event-target-shim",
+      "name": "event-target-shim",
+      "version": "5.0.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/event-target-shim/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/fast-glob",
+      "name": "fast-glob",
+      "version": "3.3.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fast-glob/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/fast-glob/node_modules/glob-parent",
+      "name": "glob-parent",
+      "version": "5.1.2",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fast-glob/node_modules/glob-parent/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/fastq",
+      "name": "fastq",
+      "version": "1.20.3",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fastq/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/fflate",
+      "name": "fflate",
+      "version": "0.6.11",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fflate/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/fill-range",
+      "name": "fill-range",
+      "version": "7.1.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fill-range/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/form-data",
+      "name": "form-data",
+      "version": "4.0.6",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/form-data/License"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/form-data-encoder",
+      "name": "form-data-encoder",
+      "version": "1.7.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/form-data-encoder/license"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/formdata-node",
+      "name": "formdata-node",
+      "version": "4.4.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/formdata-node/license"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/fraction.js",
+      "name": "fraction.js",
+      "version": "5.3.4",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/fraction.js/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/fsevents",
+      "name": "fsevents",
+      "version": "2.3.3",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/function-bind",
+      "name": "function-bind",
+      "version": "1.1.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/function-bind/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/gensync",
+      "name": "gensync",
+      "version": "1.0.0-beta.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/gensync/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/get-intrinsic",
+      "name": "get-intrinsic",
+      "version": "1.3.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/get-intrinsic/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/get-proto",
+      "name": "get-proto",
+      "version": "1.0.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/get-proto/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/glob-parent",
+      "name": "glob-parent",
+      "version": "6.0.2",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/glob-parent/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/glsl-noise",
+      "name": "glsl-noise",
+      "version": "0.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/glsl-noise/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/gopd",
+      "name": "gopd",
+      "version": "1.2.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/gopd/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/has-symbols",
+      "name": "has-symbols",
+      "version": "1.1.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/has-symbols/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/has-tostringtag",
+      "name": "has-tostringtag",
+      "version": "1.0.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/has-tostringtag/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/hasown",
+      "name": "hasown",
+      "version": "2.0.4",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/hasown/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/hls.js",
+      "name": "hls.js",
+      "version": "1.7.1",
+      "license": "Apache-2.0",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/hls.js/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/humanize-ms",
+      "name": "humanize-ms",
+      "version": "1.2.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/humanize-ms/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/ieee754",
+      "name": "ieee754",
+      "version": "1.2.1",
+      "license": "BSD-3-Clause",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/ieee754/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/immediate",
+      "name": "immediate",
+      "version": "3.0.6",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/immediate/LICENSE.txt"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/is-binary-path",
+      "name": "is-binary-path",
+      "version": "2.1.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/is-binary-path/license"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/is-core-module",
+      "name": "is-core-module",
+      "version": "2.16.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/is-core-module/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/is-extglob",
+      "name": "is-extglob",
+      "version": "2.1.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/is-extglob/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/is-glob",
+      "name": "is-glob",
+      "version": "4.0.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/is-glob/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/is-number",
+      "name": "is-number",
+      "version": "7.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/is-number/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/is-promise",
+      "name": "is-promise",
+      "version": "2.2.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/is-promise/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/isexe",
+      "name": "isexe",
+      "version": "2.0.0",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/isexe/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/its-fine",
+      "name": "its-fine",
+      "version": "1.2.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/its-fine/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/its-fine/node_modules/@types/react-reconciler",
+      "name": "@types/react-reconciler",
+      "version": "0.28.9",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/its-fine/node_modules/@types/react-reconciler/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/jiti",
+      "name": "jiti",
+      "version": "1.21.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/jiti/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/js-tokens",
+      "name": "js-tokens",
+      "version": "4.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/js-tokens/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/jsesc",
+      "name": "jsesc",
+      "version": "3.1.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/json5",
+      "name": "json5",
+      "version": "2.2.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/json5/LICENSE.md"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/lie",
+      "name": "lie",
+      "version": "3.3.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lie/license.md"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/lilconfig",
+      "name": "lilconfig",
+      "version": "3.1.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lilconfig/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/lines-and-columns",
+      "name": "lines-and-columns",
+      "version": "1.2.4",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lines-and-columns/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/loose-envify",
+      "name": "loose-envify",
+      "version": "1.4.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/loose-envify/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/lru-cache",
+      "name": "lru-cache",
+      "version": "5.1.1",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lru-cache/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/lucide-react",
+      "name": "lucide-react",
+      "version": "0.383.0",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/lucide-react/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/maath",
+      "name": "maath",
+      "version": "0.10.8",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/math-intrinsics",
+      "name": "math-intrinsics",
+      "version": "1.1.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/math-intrinsics/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/merge2",
+      "name": "merge2",
+      "version": "1.4.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/merge2/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/meshline",
+      "name": "meshline",
+      "version": "3.3.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/meshline/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/meshoptimizer",
+      "name": "meshoptimizer",
+      "version": "0.18.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/meshoptimizer/LICENSE.md"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/micromatch",
+      "name": "micromatch",
+      "version": "4.0.8",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/micromatch/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/mime-db",
+      "name": "mime-db",
+      "version": "1.52.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/mime-db/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/mime-types",
+      "name": "mime-types",
+      "version": "2.1.35",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/mime-types/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/ms",
+      "name": "ms",
+      "version": "2.1.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/ms/license.md"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/mz",
+      "name": "mz",
+      "version": "2.7.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/mz/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/nanoid",
+      "name": "nanoid",
+      "version": "3.3.18",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/nanoid/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/node-domexception",
+      "name": "node-domexception",
+      "version": "1.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/node-domexception/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/node-fetch",
+      "name": "node-fetch",
+      "version": "2.7.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/node-fetch/LICENSE.md"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/node-releases",
+      "name": "node-releases",
+      "version": "2.0.54",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/node-releases/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/normalize-path",
+      "name": "normalize-path",
+      "version": "3.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/normalize-path/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/object-assign",
+      "name": "object-assign",
+      "version": "4.1.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/object-assign/license"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/object-hash",
+      "name": "object-hash",
+      "version": "3.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/object-hash/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/path-key",
+      "name": "path-key",
+      "version": "3.1.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/path-key/license"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/path-parse",
+      "name": "path-parse",
+      "version": "1.0.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/path-parse/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/picocolors",
+      "name": "picocolors",
+      "version": "1.1.1",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/picocolors/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/picomatch",
+      "name": "picomatch",
+      "version": "2.3.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/picomatch/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/pirates",
+      "name": "pirates",
+      "version": "4.0.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/pirates/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/postcss",
+      "name": "postcss",
+      "version": "8.5.26",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/postcss/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/postcss-import",
+      "name": "postcss-import",
+      "version": "15.1.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/postcss-import/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/postcss-js",
+      "name": "postcss-js",
+      "version": "4.1.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/postcss-js/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/postcss-load-config",
+      "name": "postcss-load-config",
+      "version": "6.0.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/postcss-load-config/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/postcss-nested",
+      "name": "postcss-nested",
+      "version": "6.2.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/postcss-nested/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/postcss-selector-parser",
+      "name": "postcss-selector-parser",
+      "version": "6.1.4",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/postcss-value-parser",
+      "name": "postcss-value-parser",
+      "version": "4.2.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/postcss-value-parser/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/potpack",
+      "name": "potpack",
+      "version": "1.0.2",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/potpack/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/promise-worker-transferable",
+      "name": "promise-worker-transferable",
+      "version": "1.0.4",
+      "license": "Apache-2.0",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/promise-worker-transferable/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/prop-types",
+      "name": "prop-types",
+      "version": "15.8.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/prop-types/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/queue-microtask",
+      "name": "queue-microtask",
+      "version": "1.2.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/queue-microtask/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/react",
+      "name": "react",
+      "version": "18.3.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/react-composer",
+      "name": "react-composer",
+      "version": "5.0.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react-composer/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/react-dom",
+      "name": "react-dom",
+      "version": "18.3.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react-dom/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/react-dom/node_modules/scheduler",
+      "name": "scheduler",
+      "version": "0.23.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react-dom/node_modules/scheduler/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/react-is",
+      "name": "react-is",
+      "version": "16.13.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react-is/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/react-reconciler",
+      "name": "react-reconciler",
+      "version": "0.27.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react-reconciler/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/react-refresh",
+      "name": "react-refresh",
+      "version": "0.17.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react-refresh/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/react-use-measure",
+      "name": "react-use-measure",
+      "version": "2.1.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/react-use-measure/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/read-cache",
+      "name": "read-cache",
+      "version": "1.0.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/read-cache/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/readdirp",
+      "name": "readdirp",
+      "version": "3.6.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/readdirp/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/require-from-string",
+      "name": "require-from-string",
+      "version": "2.0.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/require-from-string/license"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/resolve",
+      "name": "resolve",
+      "version": "1.22.12",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/resolve/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/reusify",
+      "name": "reusify",
+      "version": "1.1.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/reusify/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/rollup",
+      "name": "rollup",
+      "version": "4.63.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/rollup/LICENSE.md"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/run-parallel",
+      "name": "run-parallel",
+      "version": "1.2.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/run-parallel/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/scheduler",
+      "name": "scheduler",
+      "version": "0.21.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/scheduler/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/semver",
+      "name": "semver",
+      "version": "6.3.1",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/semver/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/shebang-command",
+      "name": "shebang-command",
+      "version": "2.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/shebang-command/license"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/shebang-regex",
+      "name": "shebang-regex",
+      "version": "3.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/shebang-regex/license"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/source-map-js",
+      "name": "source-map-js",
+      "version": "1.2.1",
+      "license": "BSD-3-Clause",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/source-map-js/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/stats-gl",
+      "name": "stats-gl",
+      "version": "2.4.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/stats-gl/node_modules/three",
+      "name": "three",
+      "version": "0.170.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/stats-gl/node_modules/three/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/stats.js",
+      "name": "stats.js",
+      "version": "0.17.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/stats.js/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/sucrase",
+      "name": "sucrase",
+      "version": "3.35.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/sucrase/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/supports-preserve-symlinks-flag",
+      "name": "supports-preserve-symlinks-flag",
+      "version": "1.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/supports-preserve-symlinks-flag/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/suspend-react",
+      "name": "suspend-react",
+      "version": "0.1.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/suspend-react/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tailwindcss",
+      "name": "tailwindcss",
+      "version": "3.4.19",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tailwindcss/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/thenify",
+      "name": "thenify",
+      "version": "3.3.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/thenify/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/thenify-all",
+      "name": "thenify-all",
+      "version": "1.6.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/thenify-all/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/three",
+      "name": "three",
+      "version": "0.160.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/three/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/three-mesh-bvh",
+      "name": "three-mesh-bvh",
+      "version": "0.7.8",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/three-mesh-bvh/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/three-stdlib",
+      "name": "three-stdlib",
+      "version": "2.36.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/three-stdlib/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tinyglobby",
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tinyglobby/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tinyglobby/node_modules/fdir",
+      "name": "fdir",
+      "version": "6.5.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tinyglobby/node_modules/fdir/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tinyglobby/node_modules/picomatch",
+      "name": "picomatch",
+      "version": "4.0.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tinyglobby/node_modules/picomatch/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/to-regex-range",
+      "name": "to-regex-range",
+      "version": "5.0.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/to-regex-range/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tr46",
+      "name": "tr46",
+      "version": "0.0.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/troika-three-text",
+      "name": "troika-three-text",
+      "version": "0.52.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/troika-three-text/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/troika-three-utils",
+      "name": "troika-three-utils",
+      "version": "0.52.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/troika-three-utils/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/troika-worker-utils",
+      "name": "troika-worker-utils",
+      "version": "0.52.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/troika-worker-utils/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/ts-interface-checker",
+      "name": "ts-interface-checker",
+      "version": "0.1.13",
+      "license": "Apache-2.0",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/ts-interface-checker/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx",
+      "name": "tsx",
+      "version": "4.23.13",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tsx/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/aix-ppc64",
+      "name": "@esbuild/aix-ppc64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/android-arm",
+      "name": "@esbuild/android-arm",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/android-arm64",
+      "name": "@esbuild/android-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/android-x64",
+      "name": "@esbuild/android-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/darwin-arm64",
+      "name": "@esbuild/darwin-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/darwin-x64",
+      "name": "@esbuild/darwin-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/freebsd-arm64",
+      "name": "@esbuild/freebsd-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/freebsd-x64",
+      "name": "@esbuild/freebsd-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/linux-arm",
+      "name": "@esbuild/linux-arm",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/linux-arm64",
+      "name": "@esbuild/linux-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/linux-ia32",
+      "name": "@esbuild/linux-ia32",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/linux-loong64",
+      "name": "@esbuild/linux-loong64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/linux-mips64el",
+      "name": "@esbuild/linux-mips64el",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/linux-ppc64",
+      "name": "@esbuild/linux-ppc64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/linux-riscv64",
+      "name": "@esbuild/linux-riscv64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/linux-s390x",
+      "name": "@esbuild/linux-s390x",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/linux-x64",
+      "name": "@esbuild/linux-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/netbsd-x64",
+      "name": "@esbuild/netbsd-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/openbsd-x64",
+      "name": "@esbuild/openbsd-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/sunos-x64",
+      "name": "@esbuild/sunos-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/win32-arm64",
+      "name": "@esbuild/win32-arm64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/win32-ia32",
+      "name": "@esbuild/win32-ia32",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "package-lock.json",
+      "installed": false,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/@esbuild/win32-x64",
+      "name": "@esbuild/win32-x64",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tsx/node_modules/esbuild",
+      "name": "esbuild",
+      "version": "0.28.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tsx/node_modules/esbuild/LICENSE.md"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/tunnel-rat",
+      "name": "tunnel-rat",
+      "version": "0.1.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/tunnel-rat/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/typescript",
+      "name": "typescript",
+      "version": "5.9.3",
+      "license": "Apache-2.0",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/typescript/LICENSE.txt"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/undici-types",
+      "name": "undici-types",
+      "version": "5.26.5",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/update-browserslist-db",
+      "name": "update-browserslist-db",
+      "version": "1.3.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/update-browserslist-db/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/use-sync-external-store",
+      "name": "use-sync-external-store",
+      "version": "1.6.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/use-sync-external-store/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/util-deprecate",
+      "name": "util-deprecate",
+      "version": "1.0.2",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/util-deprecate/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/utility-types",
+      "name": "utility-types",
+      "version": "3.11.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/utility-types/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/vite",
+      "name": "vite",
+      "version": "5.4.21",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/vite/LICENSE.md"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/web-streams-polyfill",
+      "name": "web-streams-polyfill",
+      "version": "4.0.0-beta.3",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/web-streams-polyfill/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/webgl-constants",
+      "name": "webgl-constants",
+      "version": "1.1.1",
+      "license": "MIT",
+      "licenseSource": "installed LICENSE text",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/webgl-constants/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/webgl-sdf-generator",
+      "name": "webgl-sdf-generator",
+      "version": "1.1.1",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/webgl-sdf-generator/LICENSE.txt"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/webgpu",
+      "name": "webgpu",
+      "version": "0.6.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/webgpu/LICENSE.md"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/webidl-conversions",
+      "name": "webidl-conversions",
+      "version": "3.0.1",
+      "license": "BSD-2-Clause",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/webidl-conversions/LICENSE.md"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/whatwg-url",
+      "name": "whatwg-url",
+      "version": "5.0.0",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/whatwg-url/LICENSE.txt"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/which",
+      "name": "which",
+      "version": "2.0.2",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/which/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/yallist",
+      "name": "yallist",
+      "version": "3.1.1",
+      "license": "ISC",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/yallist/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    },
+    {
+      "path": "node_modules/zustand",
+      "name": "zustand",
+      "version": "4.5.7",
+      "license": "MIT",
+      "licenseSource": "installed package.json",
+      "installed": true,
+      "licenseFiles": [
+        "node_modules/zustand/LICENSE"
+      ],
+      "disposition": "Permissive; retain copyright, license and applicable NOTICE text."
+    }
+  ]
+}

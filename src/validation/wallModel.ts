@@ -149,4 +149,4 @@ export function checkStallAngleUnmoved(stallOff: number, stallOn: number): WallT
   };
 }
 
-export const WALL_MODEL_GATING = true;
+export const WALL_MODEL_VALIDATED = false;

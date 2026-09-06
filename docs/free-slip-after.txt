@@ -1,0 +1,15 @@
+TAP version 13
+# Subtest: executing GPU: a uniform empty free-slip tunnel preserves inlet velocity
+ok 1 - executing GPU: a uniform empty free-slip tunnel preserves inlet velocity
+  ---
+  duration_ms: 916.3854
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1746.8334

@@ -1,4 +1,5 @@
 import { triBoxOverlap } from './triBox';
+import { validateVoxelInput } from './inputLimits';
 
 export const CELL = { FLUID: 0, SOLID: 1, INLET: 2, OUTLET: 3, WALL: 4 } as const;
 
@@ -25,6 +26,7 @@ const idx = (x: number, y: number, z: number, g: GridSpec) =>
  * which is the correct failure mode — the solver still sees a wall).
  */
 export function voxelize({ positions, grid }: VoxelizeInput): Uint32Array {
+  validateVoxelInput({ positions, grid });
   const { nx, ny, nz, dx, origin } = grid;
   const flags = new Uint32Array(nx * ny * nz);
   const half = [dx * 0.5, dx * 0.5, dx * 0.5];

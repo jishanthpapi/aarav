@@ -31,10 +31,11 @@ export function boxTriangleSoup(
     [p.npn, p.ppn, p.ppp], [p.npn, p.ppp, p.npp],
   ];
 
+  // Outward winding: this soup is now also used by the visible Three.js mesh.
   const out = new Float32Array(faces.length * 9);
   let k = 0;
   for (const tri of faces) {
-    for (const v of tri) {
+    for (const v of [tri[0], tri[2], tri[1]]) {
       out[k++] = v[0]; out[k++] = v[1]; out[k++] = v[2];
     }
   }

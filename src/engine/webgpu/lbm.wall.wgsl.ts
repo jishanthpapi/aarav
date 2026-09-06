@@ -1,5 +1,5 @@
 export const COLLIDE_WITH_WALL_MODEL = /* wgsl */ `
-override WALL_MODEL: u32 = 1u;
+override WALL_MODEL: u32 = 0u;
 
 @group(0) @binding(7) var<storage, read>       wallGeom: array<vec4<f32>>;
 @group(0) @binding(8) var<storage, read_write> yPlusOut: array<f32>;

@@ -25,11 +25,13 @@ export function frontalAreaCells(flags: Uint32Array, g: GridSpec): number {
 
 const WAKE_FRACTION = 0.5;
 
-export function wakeSize(macros: Float32Array, g: GridSpec, uInlet: number): number {
+export function wakeSize(macros: Float32Array, g: GridSpec, uInlet: number, flags?: Uint32Array, trailingX = -Infinity): number {
   const { nx, ny, nz } = g;
   const threshold = uInlet * WAKE_FRACTION;
   let count = 0;
   for (let i = 0; i < nx * ny * nz; i++) {
+    if (flags && flags[i] !== CELL.FLUID) continue;
+    if (g.origin[0] + (i % nx) * g.dx <= trailingX) continue;
     const b = i * 4;
     const speed = Math.hypot(macros[b], macros[b + 1], macros[b + 2]);
     if (speed > 1e-9 && speed < threshold) count++;
@@ -37,11 +39,7 @@ export function wakeSize(macros: Float32Array, g: GridSpec, uInlet: number): num
   return count;
 }
 
-const EMA_ALPHA = 0.08;
-
 export class ForceIntegrator {
-  private emaCd: number | null = null;
-  private emaCl: number | null = null;
 
   compute(rawAccum: Int32Array, uLattice: number, refAreaCells: number): AeroReadout {
     const Fx = rawAccum[0] / FORCE_SCALE;
@@ -66,11 +64,10 @@ export class ForceIntegrator {
                reason: 'Negative drag — solver has not converged or is unstable.' };
     }
 
-    this.emaCd = this.emaCd === null ? Cd : this.emaCd + EMA_ALPHA * (Cd - this.emaCd);
-    this.emaCl = this.emaCl === null ? Cl : this.emaCl + EMA_ALPHA * (Cl - this.emaCl);
-
-    return { Cd: this.emaCd, Cl: this.emaCl, wakeCells: 0, refAreaCells, valid: true };
+    // Feed unsmoothed samples to the convergence monitor. An EMA would
+    // artificially reduce the reported statistical scatter.
+    return { Cd, Cl, wakeCells: 0, refAreaCells, valid: true };
   }
 
-  reset() { this.emaCd = null; this.emaCl = null; }
+  reset() {}
 }

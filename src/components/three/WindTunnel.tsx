@@ -1,5 +1,5 @@
 import { Grid } from '@react-three/drei';
-import VehiclePlaceholder from './VehiclePlaceholder';
+import GenericCar from './GenericCar';
 
 export default function WindTunnel() {
   return (
@@ -17,8 +17,8 @@ export default function WindTunnel() {
         cellColor="#222"
       />
 
-      {/* Placeholder Vehicle */}
-      <VehiclePlaceholder />
+      {/* Shared vehicle geometry */}
+      <GenericCar />
 
       {/* Tunnel Floor */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.01, 0]} receiveShadow>

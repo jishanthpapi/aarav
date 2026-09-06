@@ -1,0 +1,8 @@
+{
+  "kind": "actual WebGL2 fallback execution",
+  "sourceSHA256": "ca66ca068f485be5db08f2f609d741d68a989384312412e506798cdc048a9f3c",
+  "results": [
+    {"kph":10,"steps":3000,"fieldChecks":3000,"maxSpeed":0.053438066720925555,"seconds":46.7579,"failure":null,"texturesBefore":0,"texturesAfterDestroy":0,"resolutionLimited":true,"achievedRe":7.916666666666666},
+    {"kph":250,"steps":3000,"fieldChecks":3000,"maxSpeed":0.061212063544560734,"seconds":218.7775,"failure":null,"texturesBefore":0,"texturesAfterDestroy":0,"resolutionLimited":true,"achievedRe":53.90243902439025}
+  ]
+}

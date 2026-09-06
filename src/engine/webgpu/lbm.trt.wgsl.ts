@@ -3,6 +3,10 @@ override NX: u32 = 128u;
 override NY: u32 = 64u;
 override NZ: u32 = 64u;
 override SMAGORINSKY: u32 = 1u;
+override FORCE_DIAGNOSTICS: u32 = 0u;
+override MOMENT_X: f32 = 0.0;
+override MOMENT_Y: f32 = 0.0;
+override MOMENT_Z: f32 = 0.0;
 
 const Q: u32 = 19u;
 const CS2: f32 = 0.3333333333;
@@ -44,7 +48,7 @@ struct Params {
 @group(0) @binding(3) var<storage, read_write> macros: array<vec4<f32>>;
 @group(0) @binding(4) var<uniform>             params: Params;
 @group(0) @binding(5) var<storage, read>       qFrac:  array<f32>;
-@group(0) @binding(6) var<storage, read_write> accum:  array<atomic<i32>, 4>;
+@group(0) @binding(6) var<storage, read_write> accum:  array<atomic<i32>>;
 
 fn cellIndex(p: vec3<u32>) -> u32 { return p.x + p.y * NX + p.z * NX * NY; }
 fn fIndex(q: u32, i: u32) -> u32  { return q * (NX * NY * NZ) + i; }
@@ -115,6 +119,7 @@ fn collide(@builtin(global_invocation_id) gid: vec3<u32>) {
     omegaP = 1.0 / max(tauT, 0.5000001);
   }
 
+  omegaP = wallAdjustedOmega(i, u, rho, omegaP, (1.0 / params.omegaPlus - 0.5) / 3.0);
   let tauP   = 1.0 / omegaP;
   let tauM   = 0.5 + params.lambdaTRT / max(tauP - 0.5, 1e-6);
   let omegaM = 1.0 / tauM;
@@ -136,17 +141,32 @@ fn collide(@builtin(global_invocation_id) gid: vec3<u32>) {
 fn streamBounceForce(@builtin(global_invocation_id) gid: vec3<u32>) {
   if (gid.x >= NX || gid.y >= NY || gid.z >= NZ) { return; }
   let i = cellIndex(gid);
+  if (FORCE_DIAGNOSTICS == 1u) {
+    for (var k = 0u; k < 6u; k = k + 1u) { atomicStore(&accum[4u + 6u*i + k], 0); }
+  }
   if (flags[i] == 1u) { return; }
 
   let p = vec3<i32>(gid);
   var force = vec3<f32>(0.0);
+  var moment = vec3<f32>(0.0);
   var links = 0;
 
   for (var d = 0u; d < Q; d = d + 1u) {
     let src = p - C[d];
 
     if (!inBounds(src)) {
-      fOut[fIndex(d, i)] = fIn[fIndex(opposite(d), i)];
+      // Specular reflection reverses only the velocity component normal to
+      // each crossed domain face. Full bounce-back would impose tangential
+      // drag on these nominally free-slip tunnel walls.
+      let reflected = vec3<i32>(
+        select(C[d].x, -C[d].x, src.x < 0 || src.x >= i32(NX)),
+        select(C[d].y, -C[d].y, src.y < 0 || src.y >= i32(NY)),
+        select(C[d].z, -C[d].z, src.z < 0 || src.z >= i32(NZ)));
+      var reflectedQ = opposite(d);
+      for (var q = 0u; q < Q; q = q + 1u) {
+        if (all(C[q] == reflected)) { reflectedQ = q; break; }
+      }
+      fOut[fIndex(d, i)] = fIn[fIndex(reflectedQ, i)];
       continue;
     }
     let si = cellIndex(vec3<u32>(src));
@@ -174,7 +194,12 @@ fn streamBounceForce(@builtin(global_invocation_id) gid: vec3<u32>) {
     }
 
     fOut[fIndex(d, i)] = fNew;
-    force = force + vec3<f32>(C[q]) * (fq + fNew);
+    let linkForce = vec3<f32>(C[q]) * (fq + fNew);
+    force = force + linkForce;
+    if (FORCE_DIAGNOSTICS == 1u) {
+      let arm = vec3<f32>(p) + vec3<f32>(C[q]) * qf - vec3<f32>(MOMENT_X, MOMENT_Y, MOMENT_Z);
+      moment = moment + cross(arm, linkForce);
+    }
     links = links + 1;
   }
 
@@ -183,6 +208,12 @@ fn streamBounceForce(@builtin(global_invocation_id) gid: vec3<u32>) {
   atomicAdd(&accum[1], i32(force.y * FORCE_SCALE));
   atomicAdd(&accum[2], i32(force.z * FORCE_SCALE));
   atomicAdd(&accum[3], links);
+  if (FORCE_DIAGNOSTICS == 1u) {
+    for (var k = 0u; k < 3u; k = k + 1u) {
+      atomicStore(&accum[4u + 6u*i + k], i32(force[k] * FORCE_SCALE));
+      atomicStore(&accum[4u + 6u*i + 3u + k], i32(moment[k] * FORCE_SCALE));
+    }
+  }
 }
 
 // ── 3. BOUNDARY — inlet / convective outlet / free-slip walls ───────────────
@@ -196,17 +227,6 @@ fn boundary(@builtin(global_invocation_id) gid: vec3<u32>) {
     let u = vec3<f32>(params.uInlet, 0.0, 0.0);
     for (var q = 0u; q < Q; q = q + 1u) { fOut[fIndex(q, i)] = equilibrium(q, 1.0, u); }
     macros[i] = vec4<f32>(u, 1.0);
-    return;
-  }
-
-  if (flag == 3u) {
-    let U = params.uInlet;
-    let src = cellIndex(vec3<u32>(gid.x - 1u, gid.y, gid.z));
-    let inv = 1.0 / (1.0 + U);
-    for (var q = 0u; q < Q; q = q + 1u) {
-      fOut[fIndex(q, i)] = (fIn[fIndex(q, i)] + U * fOut[fIndex(q, src)]) * inv;
-    }
-    macros[i] = macros[src];
     return;
   }
 
@@ -225,6 +245,45 @@ fn boundary(@builtin(global_invocation_id) gid: vec3<u32>) {
     for (var q = 0u; q < Q; q = q + 1u) { fOut[fIndex(q, i)] = equilibrium(q, rho, u); }
     macros[i] = vec4<f32>(u, rho);
   }
+}
+
+// Outlet runs after inlet/wall updates, so corner source cells are stable.
+@compute @workgroup_size(4, 4, 4)
+fn outlet(@builtin(global_invocation_id) gid: vec3<u32>) {
+  if (gid.x >= NX || gid.y >= NY || gid.z >= NZ) { return; }
+  let i = cellIndex(gid);
+  let flag = flags[i];
+  if (flag == 3u) {
+    let U = params.uInlet;
+    let src = cellIndex(vec3<u32>(gid.x - 1u, gid.y, gid.z));
+    let inv = 1.0 / (1.0 + U);
+    for (var q = 0u; q < Q; q = q + 1u) {
+      fOut[fIndex(q, i)] = (fIn[fIndex(q, i)] + U * fOut[fIndex(q, src)]) * inv;
+    }
+    macros[i] = macros[src];
+    return;
+  }
+
+}
+
+// Publish one coherent field from the completed timestep, not mixed
+// pre-collision interior cells and post-boundary boundary cells.
+@compute @workgroup_size(4, 4, 4)
+fn publishMacros(@builtin(global_invocation_id) gid: vec3<u32>) {
+  if (gid.x >= NX || gid.y >= NY || gid.z >= NZ) { return; }
+  let i = cellIndex(gid);
+  if (flags[i] == 1u) {
+    macros[i] = vec4<f32>(0.0, 0.0, 0.0, 1.0);
+    return;
+  }
+  var rho = 0.0;
+  var mom = vec3<f32>(0.0);
+  for (var q = 0u; q < Q; q = q + 1u) {
+    let f = fIn[fIndex(q, i)];
+    rho = rho + f;
+    mom = mom + f * vec3<f32>(C[q]);
+  }
+  macros[i] = vec4<f32>(mom / max(rho, 1e-6), rho);
 }
 
 @compute @workgroup_size(1)

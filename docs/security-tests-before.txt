@@ -1,0 +1,158 @@
+
+> aarav-aerodynamics@0.0.1 test
+> node scripts/run-tests.mjs
+
+TAP version 13
+# (node:24332) ExperimentalWarning: Import assertions are not a stable feature of the JavaScript language. Avoid relying on their current behavior and syntax as those might change in a future version of Node.js.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: rendering and voxelization consume exactly the same car triangles on the X axis
+ok 1 - rendering and voxelization consume exactly the same car triangles on the X axis
+  ---
+  duration_ms: 171.5899
+  ...
+# Subtest: front splitter toggle adds and removes the visible shared mesh
+ok 2 - front splitter toggle adds and removes the visible shared mesh
+  ---
+  duration_ms: 37.6857
+  ...
+# Subtest: every permitted geometry extreme fits the same preallocated domain
+ok 3 - every permitted geometry extreme fits the same preallocated domain
+  ---
+  duration_ms: 155.4891
+  ...
+# Subtest: all four controls change the geometry the solver receives
+ok 4 - all four controls change the geometry the solver receives
+  ---
+  duration_ms: 10887.7438
+  ...
+# Subtest: worker backpressure keeps only the newest queued slider change
+ok 5 - worker backpressure keeps only the newest queued slider change
+  ---
+  duration_ms: 59.7295
+  ...
+# Subtest: closing the worker rejects all pending callers and ignores late replies
+ok 6 - closing the worker rejects all pending callers and ignores late replies
+  ---
+  duration_ms: 2.9332
+  ...
+# Subtest: geometry changes invalidate previous coefficients immediately and clamp inputs
+ok 7 - geometry changes invalidate previous coefficients immediately and clamp inputs
+  ---
+  duration_ms: 3.6115
+  ...
+# Subtest: Reynolds reporting does not claim SGS restores a clamped molecular Reynolds number
+ok 8 - Reynolds reporting does not claim SGS restores a clamped molecular Reynolds number
+  ---
+  duration_ms: 1.0313
+  ...
+# Subtest: convergence warmup uses solver timesteps, not the number of readbacks
+ok 9 - convergence warmup uses solver timesteps, not the number of readbacks
+  ---
+  duration_ms: 1.0164
+  ...
+# Subtest: wake count excludes solids, boundaries and upstream slow flow
+ok 10 - wake count excludes solids, boundaries and upstream slow flow
+  ---
+  duration_ms: 0.6866
+  ...
+# Subtest: domain planning uses the final cell dimensions when enforcing a small budget
+ok 11 - domain planning uses the final cell dimensions when enforcing a small budget
+  ---
+  duration_ms: 10.8764
+  ...
+# Subtest: the existing car domain fills the budget without a coarse percentage decrement
+ok 12 - the existing car domain fills the budget without a coarse percentage decrement
+  ---
+  duration_ms: 1.1141
+  ...
+# Subtest: planning retains the target resolution when it already fits
+ok 13 - planning retains the target resolution when it already fits
+  ---
+  duration_ms: 0.4585
+  ...
+# Subtest: a texture dimension limit constrains every axis independently of cell memory
+ok 14 - a texture dimension limit constrains every axis independently of cell memory
+  ---
+  duration_ms: 0.6839
+  ...
+# Subtest: larger budgets produce monotonic refinement while Reynolds limits remain explicit
+ok 15 - larger budgets produce monotonic refinement while Reynolds limits remain explicit
+  ---
+  duration_ms: 1.8836
+  ...
+# Subtest: invalid geometry, budgets, resolution and dimension limits fail before allocation
+ok 16 - invalid geometry, budgets, resolution and dimension limits fail before allocation
+  ---
+  duration_ms: 1.329
+  ...
+# Subtest: cell capacity respects both individual buffer limits and requested budget
+ok 17 - cell capacity respects both individual buffer limits and requested budget
+  ---
+  duration_ms: 0.4223
+  ...
+# Subtest: larger buffer support still respects the 512 MiB solver allocation policy
+ok 18 - larger buffer support still respects the 512 MiB solver allocation policy
+  ---
+  duration_ms: 0.284
+  ...
+# Subtest: capacity rejects invalid numeric limits instead of silently returning NaN
+ok 19 - capacity rejects invalid numeric limits instead of silently returning NaN
+  ---
+  duration_ms: 0.9326
+  ...
+# Subtest: Dawn validates TRT pipelines and dispatches with SGS both on and off (no numerical execution)
+ok 20 - Dawn validates TRT pipelines and dispatches with SGS both on and off (no numerical execution)
+  ---
+  duration_ms: 486.9083
+  ...
+# Subtest: collision output is consumed by streaming and carried into the next full timestep
+ok 21 - collision output is consumed by streaming and carried into the next full timestep
+  ---
+  duration_ms: 36.6224
+  ...
+# Subtest: reset remains valid after either an odd or an even number of timesteps
+ok 22 - reset remains valid after either an odd or an even number of timesteps
+  ---
+  duration_ms: 3.257
+  ...
+# (node:28068) ExperimentalWarning: Import assertions are not a stable feature of the JavaScript language. Avoid relying on their current behavior and syntax as those might change in a future version of Node.js.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: all ten vehicles provide finite shared rendering/solver geometry and each control changes it
+ok 23 - all ten vehicles provide finite shared rendering/solver geometry and each control changes it
+  ---
+  duration_ms: 398.568
+  ...
+# Subtest: aircraft controls stay in declared bounds at extrema
+ok 24 - aircraft controls stay in declared bounds at extrema
+  ---
+  duration_ms: 28.0517
+  ...
+# Subtest: tutor tools use current vehicle, reject invalid slots and values, and invalidate old measurements
+ok 25 - tutor tools use current vehicle, reject invalid slots and values, and invalidate old measurements
+  ---
+  duration_ms: 9.6754
+  ...
+# Subtest: flow traces follow the sampled field and stop at a solid obstacle
+ok 26 - flow traces follow the sampled field and stop at a solid obstacle
+  ---
+  duration_ms: 230.7762
+  ...
+# Subtest: tutor backend clearly reports missing configuration without calling provider
+ok 27 - tutor backend clearly reports missing configuration without calling provider
+  ---
+  duration_ms: 336.8366
+  ...
+# Subtest: all five wall gates reject missing or clearly invalid benchmark evidence
+ok 28 - all five wall gates reject missing or clearly invalid benchmark evidence
+  ---
+  duration_ms: 7.5678
+  ...
+1..28
+# tests 28
+# suites 0
+# pass 28
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 17918.7673

@@ -1,0 +1,484 @@
+
+> aarav-aerodynamics@0.0.1 test
+> node scripts/run-tests.mjs
+
+TAP version 13
+# (node:21400) ExperimentalWarning: Import assertions are not a stable feature of the JavaScript language. Avoid relying on their current behavior and syntax as those might change in a future version of Node.js.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: rendering and voxelization consume exactly the same car triangles on the X axis
+ok 1 - rendering and voxelization consume exactly the same car triangles on the X axis
+  ---
+  duration_ms: 48.6677
+  ...
+# Subtest: front splitter toggle adds and removes the visible shared mesh
+ok 2 - front splitter toggle adds and removes the visible shared mesh
+  ---
+  duration_ms: 23.2487
+  ...
+# Subtest: every permitted geometry extreme fits the same preallocated domain
+ok 3 - every permitted geometry extreme fits the same preallocated domain
+  ---
+  duration_ms: 79.1471
+  ...
+# Subtest: all four controls change the geometry the solver receives
+ok 4 - all four controls change the geometry the solver receives
+  ---
+  duration_ms: 4258.617
+  ...
+# Subtest: worker backpressure keeps only the newest queued slider change
+ok 5 - worker backpressure keeps only the newest queued slider change
+  ---
+  duration_ms: 48.4159
+  ...
+# Subtest: closing the worker rejects all pending callers and ignores late replies
+ok 6 - closing the worker rejects all pending callers and ignores late replies
+  ---
+  duration_ms: 2.359
+  ...
+# Subtest: geometry changes invalidate previous coefficients immediately and clamp inputs
+ok 7 - geometry changes invalidate previous coefficients immediately and clamp inputs
+  ---
+  duration_ms: 3.097
+  ...
+# Subtest: Reynolds reporting does not claim SGS restores a clamped molecular Reynolds number
+ok 8 - Reynolds reporting does not claim SGS restores a clamped molecular Reynolds number
+  ---
+  duration_ms: 1.0257
+  ...
+# Subtest: convergence warmup uses solver timesteps, not the number of readbacks
+ok 9 - convergence warmup uses solver timesteps, not the number of readbacks
+  ---
+  duration_ms: 1.233
+  ...
+# Subtest: wake count excludes solids, boundaries and upstream slow flow
+ok 10 - wake count excludes solids, boundaries and upstream slow flow
+  ---
+  duration_ms: 2.038
+  ...
+# Subtest: domain planning uses the final cell dimensions when enforcing a small budget
+ok 11 - domain planning uses the final cell dimensions when enforcing a small budget
+  ---
+  duration_ms: 17.6882
+  ...
+# Subtest: the existing car domain fills the budget without a coarse percentage decrement
+ok 12 - the existing car domain fills the budget without a coarse percentage decrement
+  ---
+  duration_ms: 1.3524
+  ...
+# Subtest: planning retains the target resolution when it already fits
+ok 13 - planning retains the target resolution when it already fits
+  ---
+  duration_ms: 0.6564
+  ...
+# Subtest: a texture dimension limit constrains every axis independently of cell memory
+ok 14 - a texture dimension limit constrains every axis independently of cell memory
+  ---
+  duration_ms: 1.2485
+  ...
+# Subtest: larger budgets produce monotonic refinement while Reynolds limits remain explicit
+ok 15 - larger budgets produce monotonic refinement while Reynolds limits remain explicit
+  ---
+  duration_ms: 4.8922
+  ...
+# Subtest: invalid geometry, budgets, resolution and dimension limits fail before allocation
+ok 16 - invalid geometry, budgets, resolution and dimension limits fail before allocation
+  ---
+  duration_ms: 1.1727
+  ...
+# Subtest: cell capacity respects both individual buffer limits and requested budget
+ok 17 - cell capacity respects both individual buffer limits and requested budget
+  ---
+  duration_ms: 6.6816
+  ...
+# Subtest: larger buffer support still respects the 512 MiB solver allocation policy
+ok 18 - larger buffer support still respects the 512 MiB solver allocation policy
+  ---
+  duration_ms: 0.4192
+  ...
+# Subtest: capacity rejects invalid numeric limits instead of silently returning NaN
+ok 19 - capacity rejects invalid numeric limits instead of silently returning NaN
+  ---
+  duration_ms: 7.904
+  ...
+# (node:16504) ExperimentalWarning: Import assertions are not a stable feature of the JavaScript language. Avoid relying on their current behavior and syntax as those might change in a future version of Node.js.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: chat enforces a 20-request per-minute caller cap before charging the provider
+not ok 20 - chat enforces a 20-request per-minute caller cap before charging the provider
+  ---
+  duration_ms: 326.5111
+  location: 'file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-api.test.mjs:25:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected ... Lines skipped
+    
+      [
+        200,
+    ...
+        200,
+        200,
+    +   200,
+    +   200,
+    +   200,
+    +   200,
+    +   200
+    -   429,
+    -   429,
+    -   429,
+    -   429,
+    -   429
+      ]
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 200
+    1: 200
+    2: 200
+    3: 200
+    4: 200
+    5: 200
+    6: 200
+    7: 200
+    8: 200
+    9: 200
+    10: 200
+    11: 200
+    12: 200
+    13: 200
+    14: 200
+    15: 200
+    16: 200
+    17: 200
+    18: 200
+    19: 200
+    20: 429
+    21: 429
+    22: 429
+    23: 429
+    24: 429
+  actual:
+    0: 200
+    1: 200
+    2: 200
+    3: 200
+    4: 200
+    5: 200
+    6: 200
+    7: 200
+    8: 200
+    9: 200
+    10: 200
+    11: 200
+    12: 200
+    13: 200
+    14: 200
+    15: 200
+    16: 200
+    17: 200
+    18: 200
+    19: 200
+    20: 200
+    21: 200
+    22: 200
+    23: 200
+    24: 200
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-api.test.mjs:27:10)
+    async Test.run (node:internal/test_runner/test:632:9)
+    async startSubtest (node:internal/test_runner/harness:208:3)
+  ...
+# Subtest: chat origin policy rejects arbitrary, null, malformed and missing origins
+not ok 21 - chat origin policy rejects arbitrary, null, malformed and missing origins
+  ---
+  duration_ms: 6.7895
+  location: 'file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-api.test.mjs:31:1'
+  failureType: 'testCodeFailure'
+  error: 'https://attacker.example'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 403
+  actual: 200
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-api.test.mjs:34:12)
+    async Test.run (node:internal/test_runner/test:632:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:374:7)
+  ...
+# Subtest: request fuzz cases are rejected with 400 before a provider call
+not ok 22 - request fuzz cases are rejected with 400 before a provider call
+  ---
+  duration_ms: 115.3437
+  location: 'file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-api.test.mjs:39:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected ... Lines skipped
+    
+      [
+        400,
+    ...
+        400,
+        400,
+    +   200,
+    -   400,
+        400,
+    +   200,
+    +   200,
+    +   200
+    -   400,
+    -   400,
+    -   400
+      ]
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 400
+    1: 400
+    2: 400
+    3: 400
+    4: 400
+    5: 400
+    6: 400
+    7: 400
+    8: 400
+    9: 400
+    10: 400
+    11: 400
+  actual:
+    0: 400
+    1: 400
+    2: 400
+    3: 400
+    4: 400
+    5: 400
+    6: 400
+    7: 200
+    8: 400
+    9: 200
+    10: 200
+    11: 200
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-api.test.mjs:47:10)
+    async Test.run (node:internal/test_runner/test:632:9)
+    async Test.processPendingSubtests (node:internal/test_runner/test:374:7)
+  ...
+# Subtest: missing key error is only a plain configuration message
+ok 23 - missing key error is only a plain configuration message
+  ---
+  duration_ms: 2.2975
+  ...
+# Subtest: production build contains neither the server key name nor key-shaped secrets
+ok 24 - production build contains neither the server key name nor key-shaped secrets
+  ---
+  duration_ms: 139724.6199
+  ...
+# Subtest: model response path contains no dynamic code execution
+ok 25 - model response path contains no dynamic code execution
+  ---
+  duration_ms: 150.716
+  ...
+# Subtest: assistant text is rendered with React text escaping and no HTML injection sink
+ok 26 - assistant text is rendered with React text escaping and no HTML injection sink
+  ---
+  duration_ms: 3248.7854
+  ...
+# Subtest: environment files ignore secrets and example contains only placeholders
+ok 27 - environment files ignore secrets and example contains only placeholders
+  ---
+  duration_ms: 2.183
+  ...
+# (node:28072) ExperimentalWarning: Import assertions are not a stable feature of the JavaScript language. Avoid relying on their current behavior and syntax as those might change in a future version of Node.js.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: planner and cell budget cannot exceed the solver memory ceiling under extreme input
+not ok 28 - planner and cell budget cannot exceed the solver memory ceiling under extreme input
+  ---
+  duration_ms: 24.26
+  location: 'file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-resources.test.mjs:8:1'
+  failureType: 'testCodeFailure'
+  error: 'false == true'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-resources.test.mjs:11:10)
+    Test.runInAsyncScope (node:async_hooks:206:9)
+    Test.run (node:internal/test_runner/test:631:25)
+    Test.start (node:internal/test_runner/test:542:17)
+    startSubtest (node:internal/test_runner/harness:208:17)
+  ...
+# Subtest: slot geometry rejects non-finite numeric values before voxelization
+not ok 29 - slot geometry rejects non-finite numeric values before voxelization
+  ---
+  duration_ms: 1.4125
+  location: 'file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-resources.test.mjs:15:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected exception: generic-car: wingAngle'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-resources.test.mjs:17:56)
+    Test.runInAsyncScope (node:async_hooks:206:9)
+    Test.run (node:internal/test_runner/test:631:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:374:18)
+    Test.postRun (node:internal/test_runner/test:715:19)
+    Test.run (node:internal/test_runner/test:673:12)
+    async startSubtest (node:internal/test_runner/harness:208:3)
+  ...
+# Subtest: voxelization rejects malformed triangle soups before allocating cell arrays
+not ok 30 - voxelization rejects malformed triangle soups before allocating cell arrays
+  ---
+  duration_ms: 12.6126
+  location: 'file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-resources.test.mjs:19:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected exception.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-resources.test.mjs:21:12)
+    Test.runInAsyncScope (node:async_hooks:206:9)
+    Test.run (node:internal/test_runner/test:631:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:374:18)
+    Test.postRun (node:internal/test_runner/test:715:19)
+    Test.run (node:internal/test_runner/test:673:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:374:7)
+  ...
+# Subtest: voxelization rejects oversized grids before attempting an allocation
+not ok 31 - voxelization rejects oversized grids before attempting an allocation
+  ---
+  duration_ms: 3.6014
+  location: 'file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-resources.test.mjs:23:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /grid|budget|limit/i. Input:
+    
+    'Error: Allocation attempted'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+  error: 'Allocation attempted'
+  stack: |-
+    Object.construct (file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-resources.test.mjs:25:79)
+    voxelize (c:\Users\jisha\Downloads\aarav-project-all-changes\src\engine\voxel\Voxelizer.ts:29:17)
+    file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-resources.test.mjs:26:26
+    getActual (node:assert:756:5)
+    Function.throws (node:assert:902:24)
+    TestContext.<anonymous> (file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-resources.test.mjs:26:15)
+    Test.runInAsyncScope (node:async_hooks:206:9)
+    Test.run (node:internal/test_runner/test:631:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:374:18)
+    Test.postRun (node:internal/test_runner/test:715:19)
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/security-resources.test.mjs:26:15)
+    Test.runInAsyncScope (node:async_hooks:206:9)
+    Test.run (node:internal/test_runner/test:631:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:374:18)
+    Test.postRun (node:internal/test_runner/test:715:19)
+    Test.run (node:internal/test_runner/test:673:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:374:7)
+  ...
+# Subtest: Dawn validates TRT pipelines and dispatches with SGS both on and off (no numerical execution)
+ok 32 - Dawn validates TRT pipelines and dispatches with SGS both on and off (no numerical execution)
+  ---
+  duration_ms: 2135.6272
+  ...
+# Subtest: collision output is consumed by streaming and carried into the next full timestep
+ok 33 - collision output is consumed by streaming and carried into the next full timestep
+  ---
+  duration_ms: 13.2969
+  ...
+# Subtest: reset remains valid after either an odd or an even number of timesteps
+ok 34 - reset remains valid after either an odd or an even number of timesteps
+  ---
+  duration_ms: 0.9365
+  ...
+# (node:23768) ExperimentalWarning: Import assertions are not a stable feature of the JavaScript language. Avoid relying on their current behavior and syntax as those might change in a future version of Node.js.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: all ten vehicles provide finite shared rendering/solver geometry and each control changes it
+ok 35 - all ten vehicles provide finite shared rendering/solver geometry and each control changes it
+  ---
+  duration_ms: 232.4927
+  ...
+# Subtest: aircraft controls stay in declared bounds at extrema
+ok 36 - aircraft controls stay in declared bounds at extrema
+  ---
+  duration_ms: 19.9204
+  ...
+# Subtest: tutor tools use current vehicle, reject invalid slots and values, and invalidate old measurements
+not ok 37 - tutor tools use current vehicle, reject invalid slots and values, and invalidate old measurements
+  ---
+  duration_ms: 6.3534
+  location: 'file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/vehicles-tutor-flow.test.mjs:31:1'
+  failureType: 'testCodeFailure'
+  error: 'undefined == true'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/vehicles-tutor-flow.test.mjs:35:10)
+    Test.runInAsyncScope (node:async_hooks:206:9)
+    Test.run (node:internal/test_runner/test:631:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:374:18)
+    Test.postRun (node:internal/test_runner/test:715:19)
+    Test.run (node:internal/test_runner/test:673:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:374:7)
+  ...
+# Subtest: hostile tool arguments are rejected without changing any scene state
+not ok 38 - hostile tool arguments are rejected without changing any scene state
+  ---
+  duration_ms: 1.521
+  location: 'file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/vehicles-tutor-flow.test.mjs:44:1'
+  failureType: 'testCodeFailure'
+  error: 'Unexpected input must be explicitly rejected'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/jisha/Downloads/aarav-project-all-changes/tests/vehicles-tutor-flow.test.mjs:52:12)
+    Test.runInAsyncScope (node:async_hooks:206:9)
+    Test.run (node:internal/test_runner/test:631:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:374:18)
+    Test.postRun (node:internal/test_runner/test:715:19)
+    Test.run (node:internal/test_runner/test:673:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:374:7)
+  ...
+# Subtest: unknown model tool names are rejected without executing their content
+ok 39 - unknown model tool names are rejected without executing their content
+  ---
+  duration_ms: 0.7146
+  ...
+# Subtest: flow traces follow the sampled field and stop at a solid obstacle
+ok 40 - flow traces follow the sampled field and stop at a solid obstacle
+  ---
+  duration_ms: 207.4471
+  ...
+# Subtest: tutor backend clearly reports missing configuration without calling provider
+ok 41 - tutor backend clearly reports missing configuration without calling provider
+  ---
+  duration_ms: 40.1699
+  ...
+# Subtest: all five wall gates reject missing or clearly invalid benchmark evidence
+ok 42 - all five wall gates reject missing or clearly invalid benchmark evidence
+  ---
+  duration_ms: 8.2767
+  ...
+1..42
+# tests 42
+# suites 0
+# pass 33
+# fail 9
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 143424.0329

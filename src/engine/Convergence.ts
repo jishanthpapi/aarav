@@ -18,8 +18,8 @@ export class ConvergenceMonitor {
     private readonly tol = 0.005,
   ) {}
 
-  push(value: number): ConvergenceState {
-    this.steps++;
+  push(value: number, stepsRun = this.steps + 1): ConvergenceState {
+    this.steps = stepsRun;
     if (this.steps <= this.transientSteps || !Number.isFinite(value)) {
       return {
         converged: false, developing: true, mean: value, ci95: NaN,

@@ -36,5 +36,5 @@ The UI is designed for a "Workstation" feel, optimized for 3D manipulation:
 - **Computed State**: Live Cd (Drag), Cl (Lift), wakeSize, and stability.
 
 ## 6. Open Source Strategy
-1. **Codebase**: MIT/Apache-2.0 licensed React/WebGPU source.
+1. **Codebase**: MIT-licensed React/WebGPU source.
 2. **Assets**: ONLY permissively licensed assets (CC0/Public Domain). Generic silhouettes only to avoid trademark issues.
