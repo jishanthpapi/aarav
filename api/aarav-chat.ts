@@ -2,6 +2,14 @@ import { AARAV_SYSTEM_PROMPT, AARAV_TOOLS } from '../src/engine/aaravTools';
 import type { AaravRequestBody, AaravResponseBody, AaravContentBlock, AaravMessage } from '../src/types/aarav';
 import { allowedOrigin, ChatRateLimiter, readBoundedJson, validChatBody } from '../server/chatSecurity';
 
+// Runs as a Vercel Edge Function so the platform hands this handler a real
+// Fetch API Request and expects a Response back — matching what this file
+// (and tutorMiddleware.ts's local dev wrapper) already assume. Without this,
+// Vercel deploys it as a classic Node function with (req, res) objects, and
+// every req.headers.get(...) / req.body.getReader() call below throws before
+// producing any JSON, which is what caused the "unreadable response" errors.
+export const config = { runtime: 'edge' };
+
 // Fetch-style handler, adapted to the local Node HTTP server by tutorMiddleware.
 // Talks to Groq's OpenAI-compatible chat completions endpoint instead of the
 // Anthropic API. The wire contract with the client (AaravResponseBody, with
