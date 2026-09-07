@@ -132,6 +132,8 @@ export default async function handler(req: Request, context?: { clientAddress?: 
     });
 
     if (!groqResponse.ok) {
+      const detail = await groqResponse.text().catch(() => '<unreadable body>');
+      console.error(`Groq request failed: ${groqResponse.status} ${groqResponse.statusText} — ${detail}`);
       return json(502, { error: 'The tutor provider could not complete this request. Check server credentials and provider availability, then retry.' });
     }
 
@@ -141,6 +143,7 @@ export default async function handler(req: Request, context?: { clientAddress?: 
 
     return json(200, fromGroqChoice(choice));
   } catch (error) {
+    console.error('Aarav tutor backend error:', error);
     return json(502, { error: 'The tutor provider could not complete this request. Check server credentials and provider availability, then retry.' });
   }
 }
