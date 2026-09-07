@@ -16,7 +16,9 @@ export const config = { runtime: 'edge' };
 // Anthropic-shaped content blocks and a stopReason of 'tool_use' or
 // 'end_turn') is unchanged, so aaravClient.ts and AaravChat.tsx need no edits.
 const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
-const MODEL = process.env.GROQ_MODEL || 'llama-3.3-70b-versatile';
+// llama-3.3-70b-versatile was decommissioned by Groq on 2026-08-16;
+// openai/gpt-oss-120b is Groq's recommended replacement for tool-calling use.
+const MODEL = process.env.GROQ_MODEL || 'openai/gpt-oss-120b';
 const MAX_TOKENS = 1024;
 const limiter = new ChatRateLimiter();
 
